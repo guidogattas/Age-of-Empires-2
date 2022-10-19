@@ -732,6 +732,23 @@ main.top_players div p {
     max-height: 50vh;
   }
 
+  main.top_players > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  main.top_players .card {
+    top: 0px;
+    margin-top: 100px;
+  }
+
+  div.front,
+  div.back {
+    align-items: flex-end;
+  }
 
 
   main.top_players div p {
