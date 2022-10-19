@@ -569,35 +569,38 @@ main.uni_container > div {
 }
 
 /* TOP PLAYERS */
-main.top_players,
-main.top_players div {
+
+main.top_players {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-main.top_players div {
+main.top_players > div {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin: 3rem;
-  text-align: center;
+  margin: 150px 10px 150px 10px;
+}
+
+main.top_players .card div {
+  justify-content: flex-end;
+  z-index: 5;
 }
 
 main.top_players div img {
   border-radius: 200px;
-  max-height: 40vh;
-  margin: -10px;
-  top: 50%;
-  z-index: 1;
+  max-height: 60vh;
+  z-index: 5;
   filter: drop-shadow(0.5em 0.6em 0.5em black);
 }
 
 main.top_players div p {
-  font-size: 0.9em;
-  padding: 2.5rem;
-  margin-bottom: 2.5rem;
+  font-size: 1.2em;
+  padding: 2.6rem;
   max-width: 300px;
-  height: 230px;
 }
 
 /* MEDIA QUERIES */
