@@ -727,24 +727,7 @@ main.top_players div p {
     justify-content: center;
   }
 
-  main.top_players div img {
-    margin-top: 120px;
-    max-height: 50vh;
-  }
 
-  main.top_players > div {
-    display: flex;
-    flex-direction: column;;
-    align-items: center;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    align-content: flex-start;
-  }
-
-  main.top_players div.card {
-top: 0px;
-margin-top: 40px;
-  }
 
   
   div.front {
