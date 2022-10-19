@@ -707,7 +707,7 @@ main.top_players div p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9;
+    z-index: 99;
     filter: drop-shadow(0.05em 0.05em 0.05em black);
   }
 
