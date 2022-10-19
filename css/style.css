@@ -707,7 +707,7 @@ main.top_players div p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9;
+    z-index: 99;
     filter: drop-shadow(0.05em 0.05em 0.05em black);
   }
 
@@ -728,21 +728,34 @@ main.top_players div p {
   }
 
 
-
-  
-  div.front {
-    align-items: flex-end;
-    margin-bottom: 80px;
+  main.top_players > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
+
+  main.top_players div.card {
+top: 0px;
+margin-top: 40px;
+  }
+
+  div.front,
+  div.back {
+    align-items: flex-end;
+  }
+
 
   main.top_players div p {
-    font-size: 0.6em;
+    font-size: 0.8em;
     font-weight: bold;
     padding: 50px 10px;
-    width: 80%;
+    width: 90%;
     justify-content: center;
+    padding: 40px;
   }
-  
 
   /* 480px */
   @media screen and (max-width: 480px) {
@@ -783,8 +796,6 @@ main.top_players div p {
       font-size: 0.8rem;
       padding: 0px;
     }
-
-
 
     footer ul li a i {
       font-size: 2.5rem;
