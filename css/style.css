@@ -214,8 +214,8 @@ section.trailer video {
 
 section.section_second_index {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
-  grid-template-rows: 0.3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "txt txt ban"
     "capt capt ban";
@@ -233,6 +233,8 @@ section.section_second_index {
   text-align: center;
   /* font-size: 1.4rem; */
   filter: drop-shadow(0.2em 0.2em 0.2em black);
+  align-self: center;
+  align-items: center;
 }
 
 .section_second_index .capturas {
@@ -241,13 +243,15 @@ section.section_second_index {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  /* margin: 50px; */
   gap: 20px;
+  width: 100%;
 }
 
 .section_second_index .capturas img {
   /* border-radius: 20px; */
-  height: 40%;
-  width: 60%;
+  width: 40vw;
+  height: 35vh;
   border: 1px solid black;
   transition: 0.5s;
 }
@@ -259,9 +263,14 @@ section.section_second_index {
 .section_second_index .banner {
   grid-area: ban;
   display: flex;
-  padding: 30px;
+  margin: 100px;
   justify-content: center;
   align-self: center;
+}
+
+.section_second_index .banner a {
+  height: 100%;
+  width: 100%;
 }
 
 .banner img {
@@ -636,6 +645,23 @@ main.top_players div p {
 
 /* MEDIA QUERIES */
 
+/* 1080px */
+@media screen and (max-width: 1080px) {
+
+ .section_second_index div.texto_section_second_index {
+  font-size: 0.8em;
+  padding: 30px;
+}
+
+.section_second_index div.texto_section_second_index p{
+align-content: center;
+align-self: center;
+align-items: center;
+}
+
+  }
+
+
 /* 780px */
 @media screen and (max-width: 780px) {
   .container_index header.index_fixed {
@@ -675,7 +701,6 @@ main.top_players div p {
     justify-content: center;
   }
 
-
   section.section_second_index {
     display: flex;
     flex-direction: row;
@@ -684,12 +709,16 @@ main.top_players div p {
     align-content: center;
   }
 
+  .section_second_index .banner {
+    margin: 0px;
+  }
 
   .section_second_index .banner img {
     height: 80%;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0px;
   }
 
   .section_second_index div.texto_section_second_index {
@@ -698,9 +727,8 @@ main.top_players div p {
   }
 
   .section_second_index .capturas {
-display: none;
+    display: none;
   }
-
 
   div.fondo_no_index {
     display: flex;
