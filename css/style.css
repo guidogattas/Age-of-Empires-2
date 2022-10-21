@@ -794,8 +794,7 @@ main.top_players div p::first-line  {
     margin-top: 240px;
   }
 
-  div.front,
-  div.back {
+  main.top_players div.front,  main.top_players div.back {
     align-items: flex-end;
   }
 
