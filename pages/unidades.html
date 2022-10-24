@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="../images/fav_icon_age.png" />
-  <title>Age of Empires II</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="./images/fav_icon_age.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Age of Empires II</title>
+  </head>
 
 <body>
   <div class="container_uni">
 
     <!-- NAV BAR -->
-    <header class="top_no_index">
-      <div class="logo">
-        <a href="../index.html">
-          <h1>
-            AGE OF EMPIRES II
-          </h1>
-        </a>
-      </div>
-      <nav class="nav_no_index">
-        <ul>
-          <li><a href="./civilizaciones.html">CIVILIZACIONES</a></li>
-          <li><a href="./unidades.html">UNIDADES</a></li>
-          <li><a href="./guias.html">GUÍAS</a></li>
-          <li><a href="./top_players.html">TOP PLAYERS</a></li>
-        </ul>
+    <header class="out_of_index">
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-propio">
+        <div class="container-fluid d-flex justify-content-center">
+          <div class="logo " >
+            <a href="../index.html">
+              <h1>
+                AGE OF EMPIRES II
+              </h1>
+            </a>
+          </div>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="nav-ul-header navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./civilizaciones.html">CIVILIZACIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./unidades.html">UNIDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./guias.html">GUÍAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./top_players.html">TOP PLAYERS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <div class="btns">
-        <div class="btn_search">
-          <a href="#" rel="noopener noreferrer">
-            <i class="fas fa-search icon"></i>
-          </a>
-        </div>
-        <div class="btn_share">
-          <a href="#" rel="noopener noreferrer">
-            <i class="fa-solid fa-share-nodes"></i>
-          </a>
-        </div>
-      </div>
     </header>
 
 
@@ -55,7 +66,8 @@
       <div class="texto_imagen">
         <h2>UNIDADES</h2>
         <p>
-          Cada unidad posee ciertas habilidades y/o habilidades únicas, ofreciendo una función y un papel específicos en el juego. Deberás encontrar cuál es la mejor combinación de unidades posibles para ganarle a tu rival.
+          Cada unidad posee ciertas habilidades y/o habilidades únicas, ofreciendo una función y un papel específicos en
+          el juego. Deberás encontrar cuál es la mejor combinación de unidades posibles para ganarle a tu rival.
         </p>
       </div>
     </div>
@@ -105,7 +117,9 @@
           <h3>CABALLERIA LIGERA:</h3>
           <br><br>
           <p>
-            La Caballería Ligera es una unidad de caballería que puede ser entrenada en el Establo a partir de la Edad de los Castillos. Es una unidad rápida con resistencia a la conversión que destaca por ser fuerte contra arqueros, Monjes y armas de asedio. Sin embargo, sus capacidades de combate contra otras
+            La Caballería Ligera es una unidad de caballería que puede ser entrenada en el Establo a partir de la Edad
+            de los Castillos. Es una unidad rápida con resistencia a la conversión que destaca por ser fuerte contra
+            arqueros, Monjes y armas de asedio. Sin embargo, sus capacidades de combate contra otras
             unidades de melé como la infantería o la caballería pesada son bastante limitadas.
             <br><br>
             Fortalezas y debilidades:
@@ -125,13 +139,17 @@
           <h3>JINETE:</h3>
           <br><br>
           <p>
-            El Jinete es una unidad de caballería pesada que puede ser entrenada en los Establos a partir de la Edad de los Castillos. Los jinetes son unidades muy eficaces para atacar las bases que están en una posición lejana a la nuestra, puesto que llegan ahí rápidamente y pueden causar estragos y hostigar a los aldeanos del enemigo en los primeros minutos de la Edad de los Castillos.
+            El Jinete es una unidad de caballería pesada que puede ser entrenada en los Establos a partir de la Edad de
+            los Castillos. Los jinetes son unidades muy eficaces para atacar las bases que están en una posición lejana
+            a la nuestra, puesto que llegan ahí rápidamente y pueden causar estragos y hostigar a los aldeanos del
+            enemigo en los primeros minutos de la Edad de los Castillos.
             <br><br>
             Fortalezas y debilidades:
             <br>
             Fuerte contra: Infantería, arqueros, Aldeanos, armas de asedio, Caballería de arqueros, Caballería Ligera.
             <br>
-            Débil contra: Boyardos, Piqueros, Kamayuks, Berserkers, Ballesteros Genoveses, Caballero de la Orden Teutónica, Mamelucos, Camellos, Monjes, Elefantes de guerra.
+            Débil contra: Boyardos, Piqueros, Kamayuks, Berserkers, Ballesteros Genoveses, Caballero de la Orden
+            Teutónica, Mamelucos, Camellos, Monjes, Elefantes de guerra.
             <br> <br>
             COSTO: 60 Alimento - 75 Oro.
           </p>
@@ -144,7 +162,10 @@
           <h3>CAMELLO:</h3>
           <br><br>
           <p>
-            El Camello es una unidad de caballería que puede ser entrenada en el Establo una vez se alcanza la Edad de los Castillos. Tiene un bonus de ataque contra caballería. Todas las civilizaciones que tienen acceso al Camello (excepto los Cumanos), tienen acceso al Jinete a camello pesado. El Jinete a camello es considerado una unidad regional.
+            El Camello es una unidad de caballería que puede ser entrenada en el Establo una vez se alcanza la Edad de
+            los Castillos. Tiene un bonus de ataque contra caballería. Todas las civilizaciones que tienen acceso al
+            Camello (excepto los Cumanos), tienen acceso al Jinete a camello pesado. El Jinete a camello es considerado
+            una unidad regional.
             <br><br>
             Fortalezas y debilidades:
             <br>
@@ -163,13 +184,17 @@
           <h3>ELEFANTE DE COMBATE:</h3>
           <br><br>
           <p>
-            El Elefante de Combate es una unidad regional de caballería que se puede entrenar en el Establo una vez que se alcanza la Edad de los Castillos. Es una unidad lenta pero muy poderosa y resistente, de alguna manera similar al Elefante de guerra, pero más débil y más barata. Está disponible para las siguientes civilizaciones: Bengalíes, Birmanos, Dravídicos, Jemeres, Malayos y Vietnamitas. 
+            El Elefante de Combate es una unidad regional de caballería que se puede entrenar en el Establo una vez que
+            se alcanza la Edad de los Castillos. Es una unidad lenta pero muy poderosa y resistente, de alguna manera
+            similar al Elefante de guerra, pero más débil y más barata. Está disponible para las siguientes
+            civilizaciones: Bengalíes, Birmanos, Dravídicos, Jemeres, Malayos y Vietnamitas.
             <br><br>
             Fortalezas y debilidades:
             <br>
             Fuerte contra: Unidades cuerpo a cuerpo (excepto piqueros), edificios.
             <br>
-            Débil contra: Piqueros, Kamayuks, Genoveses Ballesteros, Mamelucos, Jinetes a camello pesado, Caballería de arqueros, Monjes, Elefantes de guerra, Escorpiones.
+            Débil contra: Piqueros, Kamayuks, Genoveses Ballesteros, Mamelucos, Jinetes a camello pesado, Caballería de
+            arqueros, Monjes, Elefantes de guerra, Escorpiones.
             <br> <br>
             COSTO: 120 Alimento - 70 Oro.
           </p>
@@ -203,7 +228,10 @@
           <h3>LANCERO:</h3>
           <br><br>
           <p>
-            El Lancero es una unidad de infantería en Age of Empires II que puede ser entrenada en el Cuartel una vez se alcanza la Edad Feudal. Son una buena respuesta a la caballería al principio de la partida, pero son débiles contra prácticamente todo lo demás. Si no es mejorado, el Lancero es una de las dos únicas unidades militares que pierden en combate contra un aldeano con Telar (la otra es el Hostigador).
+            El Lancero es una unidad de infantería en Age of Empires II que puede ser entrenada en el Cuartel una vez se
+            alcanza la Edad Feudal. Son una buena respuesta a la caballería al principio de la partida, pero son débiles
+            contra prácticamente todo lo demás. Si no es mejorado, el Lancero es una de las dos únicas unidades
+            militares que pierden en combate contra un aldeano con Telar (la otra es el Hostigador).
             <br><br>
             Fortalezas y debilidades:
             <br>
@@ -222,13 +250,18 @@
           <h3>ARQUERO A CABALLO:</h3>
           <br><br>
           <p>
-            La Caballería de arqueros es una unidad que puede ser entrenada en la Galería de tiro con arco una vez se alcanza la Edad de los Castillos. Su ataque a distancia y alta velocidad los hace una excelente unidad a distancia. Con un micromanejo adecuado, un pequeño grupo de Arqueros a Caballo puede resultar letal contra grupos más grandes de infantería y presentar una excelente fuerza ofensiva para hostigar y acabar con los aldeanos enemigos. 
+            La Caballería de arqueros es una unidad que puede ser entrenada en la Galería de tiro con arco una vez se
+            alcanza la Edad de los Castillos. Su ataque a distancia y alta velocidad los hace una excelente unidad a
+            distancia. Con un micromanejo adecuado, un pequeño grupo de Arqueros a Caballo puede resultar letal contra
+            grupos más grandes de infantería y presentar una excelente fuerza ofensiva para hostigar y acabar con los
+            aldeanos enemigos.
             <br><br>
             Fortalezas y debilidades:
             <br>
             Fuerte contra: Unidades lentas de cuerpo a cuerpo.
             <br>
-            Débil contra: Kamayuks, Genovés Ballestero, Huscarles, Guerrilleros, Guerrero Águila, Mangoneles, Escorpiones, Camellos, Arquero de Ratán.
+            Débil contra: Kamayuks, Genovés Ballestero, Huscarles, Guerrilleros, Guerrero Águila, Mangoneles,
+            Escorpiones, Camellos, Arquero de Ratán.
             <br> <br>
             COSTO: 40 Madera - 60 Oro.
           </p>
@@ -241,7 +274,10 @@
           <h3>MILICIA:</h3>
           <br><br>
           <p>
-            La Milicia es la primera unidad que se puede crear en Age of Empires II en la Alta Edad Media. Estas unidades, aún siendo infantería, son extremadamente ineficaces contra la mayoría de los edificios y las unidades, aunque todavía puede derrotar fácilmente un aldeano si este no tiene desarrollado el Telar. La Milicia no es efectiva después de la Alta Edad Media.
+            La Milicia es la primera unidad que se puede crear en Age of Empires II en la Alta Edad Media. Estas
+            unidades, aún siendo infantería, son extremadamente ineficaces contra la mayoría de los edificios y las
+            unidades, aunque todavía puede derrotar fácilmente un aldeano si este no tiene desarrollado el Telar. La
+            Milicia no es efectiva después de la Alta Edad Media.
             <br><br>
             Fortalezas y debilidades:
             <br>
@@ -260,7 +296,9 @@
           <h3>GUERRERO ÁGUILA:</h3>
           <br><br>
           <p>
-            El Guerrero Águila es una unidad de infantería que tienen una línea de visión muy amplia y buena resistencia a los proyectiles, aunque también se pueden usar en batalla para flanquear o emboscar al enemigo. Solamente disponible en las civilizaciones Aztecas, Mayas e Incas.
+            El Guerrero Águila es una unidad de infantería que tienen una línea de visión muy amplia y buena resistencia
+            a los proyectiles, aunque también se pueden usar en batalla para flanquear o emboscar al enemigo. Solamente
+            disponible en las civilizaciones Aztecas, Mayas e Incas.
             <br><br>
             Fortalezas y debilidades:
             <br>
@@ -320,6 +358,15 @@
       <a class="footer_up" href="#"><i class="fa-regular fa-circle-up"></i></a>
     </footer>
   </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

@@ -7,34 +7,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
-<link rel="shortcut icon" href="./images/fav_icon_age.png" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<title>Age of Empires II</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;700&family=Inter:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/fav_icon_age.png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Age of Empires II</title>
 </head>
 
 <body>
-
   <div class="container_index">
-    <header class="index_fixed">
-      <h1 class="logo">
-        AGE OF EMPIRES II
-      </h1>
-      <div class="btns">
-        <div class="btn_search">
-          <a href="#" rel="noopener noreferrer">
-            <i class="fas fa-search icon"></i>
-          </a>
-        </div>
-        <div class="btn_share">
-          <a href="#" rel="noopener noreferrer">
-            <i class="fa-solid fa-share-nodes"></i>
-          </a>
-        </div>
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-propio">
+        <div class="container-fluid d-flex justify-content-center">
+          <div class="logo">
+            <a href="../index.html">
+              <h1>
+                AGE OF EMPIRES II
+              </h1>
+            </a>
+          </div>
+
+          <div class="btns">
+            <div class="btn_search">
+              <a href="#" rel="noopener noreferrer">
+                <i class="fas fa-search icon"></i>
+              </a>
+            </div>
+            <div class="btn_share">
+              <a href="#" rel="noopener noreferrer">
+                <i class="fa-solid fa-share-nodes"></i>
+              </a>
+            </div>
+      </nav>
     </header>
 
     <!-- PRIMER BACK -->
@@ -100,9 +112,9 @@
     <!-- SECTION -->
 
     <section class="section_second_index">
-      <div class="texto_section_second_index">
+      <div class="texto_section">
         <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="1000">
-          <h3>REQUISITOS DEL SISTEMA PARA PODER JUGARLO</h3>
+          <h3>REQUISITOS DEL SISTEMA:</h3>
           <br />
           <p>
             MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO:
@@ -124,10 +136,58 @@
         </div>
       </div>
       <div class="capturas">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+              aria-label="Slide 3"></button>
+          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./images/background01.jpg" class="d-block w-100" alt="arquero disparando flecha con fuego contra una torre">
+              <img src="./images/background01.jpg" class="d-block w-100"
+                alt="arquero disparando flecha con fuego contra una torre">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/background02.jpg" class="d-block w-100" alt="guerreros peleando">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/background03.jpg" class="d-block w-100" alt="ejercito entrando a una fortaleza">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/back001.jpg" class="d-block w-100" alt="imagen gameplay 01">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/back002.jpg" class="d-block w-100" alt="imagen gameplay 02">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/back003.jpg" class="d-block w-100" alt="imagen gameplay 03">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/background01.jpg" class="d-block w-100"
+                alt="arquero disparando flecha con fuego contra una torre">
             </div>
             <div class="carousel-item">
               <img src="./images/background02.jpg" class="d-block w-100" alt="guerreros peleando">
@@ -155,7 +215,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>
+        </div> -->
       </div>
       <div class="banner">
         <a href="https://www.redbull.com/int-en/events/red-bull-wololo-legacy/" target="_blank">
@@ -190,7 +250,7 @@
     </footer>
   </div>
 
-<!-- SCRIPTS -->
+  <!-- SCRIPTS -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

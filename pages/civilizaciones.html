@@ -5,46 +5,58 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="../images/fav_icon_age.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  <link rel="shortcut icon" href="./images/fav_icon_age.png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Age of Empires II</title>
 </head>
 
 
 <body>
   <div class="container_civ">
+    
     <!-- NAV BAR -->
-    <header class="top_no_index">
-      <div class="logo">
-        <a href="../index.html">
-          <h1>
-            AGE OF EMPIRES II
-          </h1>
-        </a>
-      </div>
-      <nav class="nav_no_index">
-        <ul>
-          <li><a href="./civilizaciones.html">CIVILIZACIONES</a></li>
-          <li><a href="./unidades.html">UNIDADES</a></li>
-          <li><a href="./guias.html">GUÍAS</a></li>
-          <li><a href="./top_players.html">TOP PLAYERS</a></li>
-        </ul>
+    <header class="out_of_index">
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-propio">
+        <div class="container-fluid d-flex justify-content-center">
+          <div class="logo " >
+            <a href="../index.html">
+              <h1>
+                AGE OF EMPIRES II
+              </h1>
+            </a>
+          </div>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="nav-ul-header navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./civilizaciones.html">CIVILIZACIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./unidades.html">UNIDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./guias.html">GUÍAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./top_players.html">TOP PLAYERS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <div class="btns">
-        <div class="btn_search">
-          <a href="#" rel="noopener noreferrer">
-            <i class="fas fa-search icon"></i>
-          </a>
-        </div>
-        <div class="btn_share">
-          <a href="#" rel="noopener noreferrer">
-            <i class="fa-solid fa-share-nodes"></i>
-          </a>
-        </div>
-      </div>
     </header>
 
 
@@ -72,13 +84,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             AZTECAS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización de infantería y monjes
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Aldeanos: cargan +3 recursos
             </li>
@@ -129,13 +141,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             BENGALÍES
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización naval y de elefantes
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Las unidades en elefante reciben un 25% menos de daño adicional y son más resistentes a la conversión
             </li>
@@ -186,13 +198,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             BEREBERES
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización naval y de caballería
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Los aldeanos se mueven 10% más rápido
             </li>
@@ -241,12 +253,12 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             BIRMANOS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización de monjes y elefantes </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Mejoras de campamento maderero gratis
             </li>
@@ -297,13 +309,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             BIZANTINOS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización defensiva
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Edificios: +10% de puntos de vida en Alta Edad Media, +20% en Feudal, +30% en Castillos y +40% en Imperial
             </li>
@@ -357,13 +369,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             BOHEMIOS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización de pólvora y monjes
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Las herrerías, los monasterios y las universidades cuestan -100 de madera
             </li>
@@ -418,13 +430,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             BORGOÑESES
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización de caballería
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Las mejoras económicas están disponibles una edad antes y cuestan -40% de comida
             </li>
@@ -476,13 +488,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             BRITANOS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización de arqueros a pie
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Centros urbanos: cuestan -50% de madera a partir de la Edad de los Castillos
             </li>
@@ -532,13 +544,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             BÚLGAROS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización de infantería y caballería
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Mejoras gratis para la línea de milicia
             </li>
@@ -589,13 +601,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             CELTAS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización de infantería y asedio
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Infantería: se mueve 15% más rápido a partir de Feudal
             </li>
@@ -646,13 +658,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             CHINOS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización de arqueros
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Comienzan con +3 aldeanos, -50 de madera, -200 de comida
             </li>
@@ -704,13 +716,13 @@
           </div>
         </div>
         <div class="texto_civ">
-          <h3 class="ds">
+          <h3 class="dsha">
             COREANOS
           </h3>
-          <h4 class="ds">
+          <h4 class="dsha">
             Civilización naval y defensiva
           </h4>
-          <ul class="ds">
+          <ul class="dsha">
             <li>
               Aldeanos: +3 campo de visión
             </li>
@@ -781,6 +793,15 @@
     <a class="footer_up" href="#"><i class="fa-regular fa-circle-up"></i></a>
   </footer>
   </div>
+  
+  <!-- SCRIPTS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
