@@ -75,6 +75,22 @@ ul {
   filter: drop-shadow(0.1em 0.2em 0.3em black);
 }
 
+.card .front {
+  transform: perspective(500px) rotateY(0deg);
+}
+
+.card .back {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .front {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
 /* INDEX TOP */
 
 header a:hover {
@@ -297,8 +313,8 @@ footer {
   justify-content: space-between;
   transition: 0.5s;
   width: 100%;
-  height: 26rem;
-  padding: 1.5rem;
+  height: 16rem;
+  padding: 2rem;
 }
 
 footer ul li {
@@ -326,7 +342,6 @@ footer ul li a:hover {
 
 .footer_up {
   font-size: 40px;
-  color: #ecac4d;
   transition: 0.5s;
   padding: 14px;
   margin: 20px 40px;
@@ -441,7 +456,8 @@ div.texto_imagen p {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
-  gap: 0px 20px;
+  gap: 0px 16px;
+  margin-top: 50px;
 }
 
 div.civi {
@@ -492,17 +508,18 @@ div.civi {
   border: 2px black solid;
 }
 
-.card {
+.card_civi {
   display: flex;
   flex-direction: column;
   position: relative;
+  /* margin-top: 100px; */
   width: 230px;
   height: 230px;
   background-color: inherit;
   border: none;
 }
 
-.card div {
+.card_civi div {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -514,21 +531,6 @@ div.civi {
   background-size: 0%;
 }
 
-.card .front {
-  transform: perspective(500px) rotateY(0deg);
-}
-
-.card .back {
-  transform: perspective(500px) rotateY(180deg);
-}
-
-.card:hover .front {
-  transform: perspective(500px) rotateY(180deg);
-}
-
-.card:hover .back {
-  transform: perspective(500px) rotateY(360deg);
-}
 
 /* -- GUÍAS -- */
 
@@ -619,10 +621,35 @@ main.uni_container .col-uni {
 
 /* TOP PLAYERS */
 
+.card_top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: inherit;
+  border: none;
+}
+
+.card_top div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: 1s;
+  background-size: 0%;
+  /* gap: 200px; */
+}
+
 main.top_players {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
+  gap: 20px;
+  margin: 10px;
+  margin-top: 100px;
 }
 
 main.top_players > div {
@@ -630,7 +657,7 @@ main.top_players > div {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  margin: 150px 10px 150px;
+  margin: 120px 10px 120px;
 }
 
 main.top_players div.card {
@@ -639,18 +666,19 @@ main.top_players div.card {
 
 main.top_players div img {
   border-radius: 100px;
-  max-height: 600px;
+  max-height: 500px;
   filter: drop-shadow(0.5em 0.6em 0.5em black);
 }
 
 main.top_players div p {
   font-family: "Cormorant Infant";
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
-  padding: 3.6rem;
+  padding: 2.8rem;
   /* width: 100%; */
-  max-width: 350px;
+  max-width: 330px;
   text-align: left;
+  margin: 0px;
 }
 
 main.top_players div p::first-line {
@@ -688,6 +716,10 @@ main.top_players div p::first-line {
     margin-top: 20px;
   }
 
+  div.texto_imagen {
+    margin-top: 20px;
+  }
+
   div.texto_imagen h2 {
     font-size: 1.8rem;
   }
@@ -715,6 +747,9 @@ main.top_players div p::first-line {
     filter: drop-shadow(0.05em 0.05em 0.05em black);
   }
 
+  footer {
+    justify-content: center;
+  }
 
 
 
@@ -849,30 +884,9 @@ main.top_players div p::first-line {
       padding: 20px;
     }
 
-    /* MQ FOOTER */
 
-    footer {
-      padding: 10px;
-      width: 100%;
-      height: 100%;
-      /* display: flex; */
-      justify-content: center;
-      gap: 10px;
-    }
 
-    footer nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      order: 2;
-    }
 
-    footer p {
-      font-size: 1rem;
-      text-align: center;
-      order: 3;
-      margin-bottom: 10px;
-    }
 
     /* 480px */
     @media screen and (max-width: 480px) {
