@@ -160,10 +160,10 @@ section.trailer video {
 .section_first_index p {
   color: #ecac4d;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   padding: 40px;
-  margin: 80px;
+  margin: 40px;
 }
 
 /* INDEX - MAIN MENU - CARTAS */
@@ -175,13 +175,12 @@ section.trailer video {
 
 .main_index div {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   position: relative;
   align-content: center;
   justify-content: center;
   transition: 0.5s;
-  margin: 20px 0px;
-  gap: 4rem;
+  margin: 10px 0px;
 }
 
 .menu_index div {
@@ -189,6 +188,10 @@ section.trailer video {
   align-items: center;
   justify-items: center;
   transition: 0.5s;
+}
+
+.menu_index div img {
+width: 90%;
 }
 
 .menu_index div:hover {
@@ -201,7 +204,7 @@ section.trailer video {
   position: absolute;
   color: rgb(252, 252, 252);
   font-family: "Inter";
-  font-size: 2.4rem;
+  /* font-size: 2.4rem; */
   font-weight: bold;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 1);
   transform: rotate(-45deg);
