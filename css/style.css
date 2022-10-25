@@ -20,11 +20,9 @@ body {
   font-family: "Inter", "Cormorant Infant", Helvetica, sans-serif;
   /* background-color: #191919; */
   background: linear-gradient(-45deg, #191919, #111010);
-  background-size: 2000% 2000%;
-  animation: gradient 5s ease infinite;
-  height: 100vh;
   color: #ecac4d;
   list-style: none;
+  overflow-x: hidden;
 }
 
 @keyframes gradient {
@@ -190,6 +188,7 @@ section.trailer video {
   filter: grayscale(70%);
   align-items: center;
   justify-items: center;
+  transition: 0.5s;
 }
 
 .menu_index div:hover {
@@ -268,7 +267,7 @@ section.section_second_index {
 .banner img {
   border-radius: 50px;
   transition: 0.5s;
-  width: 80%;
+  width: 70%;
   max-height: 850px;
   margin-top: 100px;
 }
@@ -326,7 +325,7 @@ footer ul li a:hover {
   font-size: 60px;
   color: #ecac4d;
   transition: 0.5s;
-  /* padding: 14px; */
+  padding: 14px;
   margin: 20px 40px;
 }
 
@@ -347,6 +346,18 @@ header.out_of_index button {
 
 .nav_ul_header li a {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-nav ul li  {
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -416,7 +427,7 @@ div.texto_imagen p {
   font-family: "Cormorant Infant";
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: whitesmoke;
 }
 
@@ -463,8 +474,8 @@ div.civi {
   margin: 2rem;
   max-width: 30ch;
   text-align: left;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 1rem;
+  /* font-weight: bold; */
 }
 
 .back-logo-civ {
@@ -585,7 +596,6 @@ div.iframeYT {
 
 /* -- UNIDADES -- */
 
-
 main.uni_container img {
   width: 70%;
   margin-top: 80px;
@@ -604,8 +614,6 @@ main.uni_container h3 {
   margin-top: 30px;
 }
 
-
-
 main.uni_container .col-uni {
   background: linear-gradient(to bottom right, rgb(45, 53, 53), rgb(0, 0, 0));
   border-radius: 20px;
@@ -613,17 +621,6 @@ main.uni_container .col-uni {
   margin: 120px 10px;
 }
 
-
-/* main.uni_container > div {
-  margin: 2rem;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: bold;
-  padding: 2rem;
-  margin-bottom: 2.5rem;
-  min-width: 300px;
-  max-width: 200px;
-} */
 
 /* TOP PLAYERS */
 
@@ -695,6 +692,10 @@ main.top_players div p::first-line {
     font-size: 1.8rem;
   }
 
+  div.texto_imagen p {
+    font-size: 1.2rem;
+  }
+
   .civilizaciones img {
     height: 200px;
     width: 200px;
@@ -703,6 +704,14 @@ main.top_players div p::first-line {
   .card {
     height: 280px;
     top: 30px;
+  }
+
+  a.footer_up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    filter: drop-shadow(0.05em 0.05em 0.05em black);
   }
 
   /* 780px */
@@ -715,9 +724,10 @@ main.top_players div p::first-line {
     .navbar-propio {
       padding: 8px;
     }
+
     .btns {
       font-size: 1.4rem;
-      padding: 6px;
+      padding: 14px;
     }
 
     .section_second_index .banner {
@@ -725,8 +735,6 @@ main.top_players div p::first-line {
       margin: 0px;
       width: 70%;
     }
-
- 
 
     .section_second_index .banner img {
       width: 100%;
@@ -755,7 +763,7 @@ main.top_players div p::first-line {
 
     .section_second_index div.texto_section {
       margin: 10px;
-      padding: 10px;
+      padding: 30px;
     }
 
     .section_second_index div.texto_section {
@@ -779,8 +787,6 @@ main.top_players div p::first-line {
       bottom: 0%;
       left: 0%;
       max-width: 100%;
-      /* max-width: 100%; */
-      /* margin: 20px; */
     }
 
     .main_index div {
@@ -790,7 +796,6 @@ main.top_players div p::first-line {
       align-content: center;
       justify-content: center;
       transition: 0.5s;
-      /* margin: 20px 0px; */
       gap: 2rem;
     }
 
@@ -851,14 +856,6 @@ main.top_players div p::first-line {
       align-items: center;
       justify-content: center;
       order: 2;
-    }
-
-    a.footer_up {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 99;
-      filter: drop-shadow(0.05em 0.05em 0.05em black);
     }
 
     footer p {

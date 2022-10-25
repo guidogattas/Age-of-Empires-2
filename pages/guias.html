@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
-      <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;700&family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="shortcut icon" href="./images/fav_icon_age.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Age of Empires II</title>
@@ -27,33 +30,34 @@
     <header class="out_of_index">
       <nav class="navbar navbar-expand-lg bg-dark navbar-propio">
         <div class="container-fluid d-flex justify-content-center">
-          <div class="logo " >
+          <div class="logo ">
             <a href="../index.html">
               <h1>
                 AGE OF EMPIRES II
               </h1>
             </a>
           </div>
-  
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            <ul class="nav-ul-header navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./civilizaciones.html">CIVILIZACIONES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./unidades.html">UNIDADES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./guias.html">GUÍAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./top_players.html">TOP PLAYERS</a>
-              </li>
-            </ul>
+            <div class="lista-nav">
+              <ul class="nav-ul-header navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./civilizaciones.html">CIVILIZACIONES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./unidades.html">UNIDADES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./guias.html">GUÍAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./top_players.html">TOP PLAYERS</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -63,16 +67,19 @@
     <!-- FONDO MENU -->
 
     <div class="fondo_no_index">
-      <img src="../images/menu_guia_large.jpg" alt="imagen menu guias">
-      <div class="texto_imagen">
-        <h2>GUÍAS</h2>
-        <p class="section_intro">
-          En este guía vas a encontrar muchos órdenes de construcción (build orders). Si sos nuevo
-          en el juego, o simplemente te gusta jugarlo, te recomiendo que aproveches y empieces con los builds más
-          fáciles de
-          ejecutar y luego avances con otros ya que van a hacerte un mejor jugador y vas a ir abarcando mejor el juego.
-          También, te recomiendo que empieces con unas pocas civilizaciones (2 o 3) y luego vayas incluyendo más de a
-          poco.</p>
+      <div data-aos="zoom-out" data-aos-duration="2500">
+        <img src="../images/menu_guia_large.jpg" alt="imagen menu guias">
+        <div class="texto_imagen">
+          <h2>GUÍAS</h2>
+          <p class="section_intro">
+            En este guía vas a encontrar muchos órdenes de construcción (build orders). Si sos nuevo
+            en el juego, o simplemente te gusta jugarlo, te recomiendo que aproveches y empieces con los builds más
+            fáciles de
+            ejecutar y luego avances con otros ya que van a hacerte un mejor jugador y vas a ir abarcando mejor el
+            juego.
+            También, te recomiendo que empieces con unas pocas civilizaciones (2 o 3) y luego vayas incluyendo más de a
+            poco.</p>
+        </div>
       </div>
     </div>
     <div class="guias_container">
@@ -113,102 +120,78 @@
 
       <h3> CÓMO JUGAR ISLAS </h3>
       <div class="iframeYT">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8fdmiECubjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8fdmiECubjA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
 
-    <div class="ribete">
-      <img src="../images/ribete.png" alt="ribete">
-    </div>
+      <div class="ribete">
+        <img src="../images/ribete.png" alt="ribete">
+      </div>
 
       <h3> FAST CASTLE JEMER </h3>
       <div class="iframeYT">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YifeRAPPmG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YifeRAPPmG0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
 
-    <div class="ribete">
-      <img src="../images/ribete.png" alt="ribete">
-    </div>
+      <div class="ribete">
+        <img src="../images/ribete.png" alt="ribete">
+      </div>
 
-    <h3> ARQUERÍA 18 POP </h3>
-    <div class="iframeYT">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lv0KSQDA0W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+      <h3> ARQUERÍA 18 POP </h3>
+      <div class="iframeYT">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lv0KSQDA0W0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
 
-  <div class="ribete">
-    <img src="../images/ribete.png" alt="ribete">
-  </div>
+      <div class="ribete">
+        <img src="../images/ribete.png" alt="ribete">
+      </div>
 
       <div class="consejos">
         <h3>CONSEJOS ÚTILES</h3>
         <ul>
           <li>
-            Explora con 2 de las 4 ovejas con las que inicias. Si encuentras más, úsalas para seguir explorando. Siempre
-            deja una
-            oveja adicional en tu Centro Urbano (la que están comiendo los aldeanos y una más).
+            Explora con 2 de las 4 ovejas con las que inicias. Si encuentras más, úsalas para seguir explorando. Siempre deja una oveja adicional en tu Centro Urbano (la que están comiendo los aldeanos y una más).
           </li>
           <li>
-            Si encuentras ciervos cerca de tu Centro Urbano (no detrás de bosques), debes atraerlos con tu explorador
-            para
-            ser
-            cazados debajo de tu Centro Urbano.
+            Si encuentras ciervos cerca de tu Centro Urbano (no detrás de bosques), debes atraerlos con tu explorador para ser cazados debajo de tu Centro Urbano.
           </li>
           <li>
-            Coloca tu Campamento Maderero en un buen lugar (la parte posterior de tu base es el mejor lugar, si no está
-            muy
-            lejos) y vigila
-            a tus aldeanos. Si los envías a cortar distintos árboles en el mismo cuadrante, lo más probable es que se
-            queden
-            quietos
-            y no trabajen. Cuando hayan terminado de cortar un árbol, verás que caminan alrededor sin sentido, así que
-            antes
-            de
-            que terminen con uno ya debes indicarles otro árbol.
+            Coloca tu Campamento Maderero en un buen lugar (la parte posterior de tu base es el mejor lugar, si no está muy lejos) y vigila a tus aldeanos. Si los envías a cortar distintos árboles en el mismo cuadrante, lo más probable es que se queden quietos y no trabajen. Cuando hayan terminado de cortar un árbol, verás que caminan alrededor sin sentido, así que
+            antes de que terminen con uno ya debes indicarles otro árbol.
           </li>
           <li>
             Cierra con casas las partes fáciles de tu base, así también podrás seguir aumentando
-            Explora si tu oponente está recolectando oro o piedra en la Edad Feudal.Revisa si tu enemigo ha recolectado
-            10
-            de oro para una apertura rápida “Drush”.
+            Explora si tu oponente está recolectando oro o piedra en la Edad Feudal.Revisa si tu enemigo ha recolectado 10 de oro para una apertura rápida “Drush”.
           </li>
           <li>
-            Patrulla, patrulla, patrulla. No uses el “attack move” porque en el DE esta bugueado. En vez de eso patrulla
-            todo el
-            tiempo, pero ten cuidado ya que en ocasiones tu unidad militar puede pasar cerca de edificios que te pueden
-            atacar.
+            Patrulla, patrulla, patrulla. No uses el “attack move” porque en el DE esta bugueado. En vez de eso patrulla todo el tiempo, pero ten cuidado ya que en ocasiones tu unidad militar puede pasar cerca de edificios que te pueden atacar.
           </li>
           <li>
-            Encierros rápidos “quick walls”: ayudan mucho, ¡usalos! Los destruirás después de defenderse y recuperar
-            recursos que
-            ocupaste. Te protegerán de ataques rápidos “Drush” gastando poco tiempo y madera.
+            Encierros rápidos “quick walls”: ayudan mucho, ¡usalos! Los destruirás después de defenderse y recuperar recursos que ocupaste. Te protegerán de ataques rápidos “Drush” gastando poco tiempo y madera.
           </li>
           <li>
-            Usa “Control + número” para enumerar tus edificios: es una buena idea usar Control+1 y Control+2 para tu
-            nombrar
-            a tu
-            ejército principal, mientras que del 3 al 6 puedes nombrar a los edificios con mayor producción (Cuarteles,
-            Galerías de
-            Tiro con Arco, Establos, Talleres de Maquinaria de Asedio y Castillos).
+            Usa “Control + número” para enumerar tus edificios: es una buena idea usar Control+1 y Control+2 para tu nombrar a tu ejército principal, mientras que del 3 al 6 puedes nombrar a los edificios con mayor producción (Cuarteles, Galerías de Tiro con Arco, Establos, Talleres de Maquinaria de Asedio y Castillos).
           </li>
           <li>
-            Encierra a tu aldeano que construye muelles para evitar que tu enemigo lo mate con su explorador. Además,
-            una
-            vez
-            terminado de construir el muelle, puedes enviarlo a pescar en la costa cerca del muelle.
+            Encierra a tu aldeano que construye muelles para evitar que tu enemigo lo mate con su explorador. Además, una vez terminado de construir el muelle, puedes enviarlo a pescar en la costa cerca del muelle.
           </li>
           <li>
-            Recuerda usar el “attack ground” con las Catapultas de Trayectoria Plana para anticiparse al movimiento del
-            ejército
+            Recuerda usar el “attack ground” con las Catapultas de Trayectoria Plana para anticiparse al movimiento del ejército
           </li>
           <li>
-            Trata de ganar las colinas alrededor del mapa con Castillos y eligiendo bien tus batallas (pelear desde
-            arriba
-            de la colina).
+            Trata de ganar las colinas alrededor del mapa con Castillos y eligiendo bien tus batallas (pelear desde arriba de la colina).
             No pelees si tu enemigo está arriba de la colina a menos que tengas muchas más unidades.
           </li>
           <li>
-            Recuerda usar la formación de Flanqueo y Línea cuando te enfrentes a Catapultas y Arqueros enemigos. También
-            es
-            bueno salir de su línea de visión.
+            Recuerda usar la formación de Flanqueo y Línea cuando te enfrentes a Catapultas y Arqueros enemigos. También es bueno salir de su línea de visión.
           </li>
           </ol>
       </div>
@@ -217,41 +200,48 @@
 
       <!-- FOOTER -->
 
+      <!-- FOOTER -->
       <footer>
         <nav>
           <ul class="contactos_footer">
-            <li class="mail">
-              <a href="mailto:guido.gattas@gmail.com"><i class="fa-regular fa-envelope"></i>
-              </a>
-            </li>
-            <li class="linkedin">
-              <a href="https://ar.linkedin.com/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="instagram">
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
+            <div data-aos="zoom-in" data-aos-duration="2000">
+              <li class="mail">
+                <a href="mailto:guido.gattas@gmail.com"><i class="fa-regular fa-envelope"></i>
+                </a>
+              </li>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
+              <li class="linkedin">
+                <a href="https://ar.linkedin.com/" target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
+              <li class="instagram">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </div>
           </ul>
         </nav>
         <a class="footer_up" href="#"><i class="fa-regular fa-circle-up"></i></a>
       </footer>
     </div>
-  
-  <!-- SCRIPTS -->
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- SCRIPTS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

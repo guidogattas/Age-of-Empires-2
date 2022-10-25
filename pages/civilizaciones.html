@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;700&family=Inter:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
   <link rel="shortcut icon" href="./images/fav_icon_age.png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Age of Empires II</title>
@@ -22,39 +24,51 @@
 
 <body>
   <div class="container_civ">
-    
+
     <!-- NAV BAR -->
+
     <header class="out_of_index">
       <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-propio">
         <div class="container-fluid d-flex justify-content-center">
-          <div class="logo " >
+          <div class="logo ">
             <a href="../index.html">
               <h1>
                 AGE OF EMPIRES II
               </h1>
             </a>
           </div>
-  
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            <ul class="nav-ul-header navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./civilizaciones.html">CIVILIZACIONES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./unidades.html">UNIDADES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./guias.html">GUÍAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./top_players.html">TOP PLAYERS</a>
-              </li>
-            </ul>
+            <div class="lista-nav">
+              <ul class="nav-ul-header navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./civilizaciones.html">CIVILIZACIONES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./unidades.html">UNIDADES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./guias.html">GUÍAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./top_players.html">TOP PLAYERS</a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <div class="btns">
+            <div class="btn_search">
+              <a href="#" rel="noopener noreferrer">
+                <i class="fas fa-search icon"></i>
+              </a>
+            </div>
+            <div class="btn_share">
+              <a href="#" rel="noopener noreferrer">
+                <i class="fa-solid fa-share-nodes"></i>
+              </a>
+            </div>
         </div>
       </nav>
     </header>
@@ -63,17 +77,18 @@
     <!-- FONDO MENU -->
 
     <div class="fondo_no_index">
-      <img src="../images/menu_civ_large.jpg" alt="imagen menu civilizaciones">
-      <div class="texto_imagen">
-        <h2>CIVILIZACIONES</h2>
-        <p>
-          Aquí encontrarás todas las especificaciones de las civilizaciones del Age of Empires II, desde las
-          bonificaciones hasta las unidades únicas.
-        </p>
+      <div data-aos="zoom-out" data-aos-duration="2500">
+        <img src="../images/menu_civ_large.jpg" alt="imagen menu civilizaciones">
+        <div class="texto_imagen">
+          <h2>CIVILIZACIONES</h2>
+          <p>
+            Aquí encontrarás todas las especificaciones de las civilizaciones del Age of Empires II, desde las
+            bonificaciones hasta las unidades únicas.
+          </p>
+        </div>
       </div>
     </div>
     <main class="civilizaciones">
-
       <div class="civi">
         <div class="card">
           <div class="front">
@@ -105,13 +120,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Guerrero Jaguar (infantería)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Átlatl (hostigadores: +1 de ataque, +1 de alcance)
@@ -122,9 +137,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Las reliquias generan +33% de oro.
+              Las reliquias generan +33% de oro
             </li>
           </ul>
           </p>
@@ -162,13 +177,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Ratha (arquero a caballo/caballería)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Paiks (Los rathas y elefantes atacan un 20% más rápido)
@@ -179,9 +194,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Las unidades mercantes producen un 10% de comida, además de oro.
+              Las unidades mercantes producen un 10% de comida, además de oro
             </li>
           </ul>
           </p>
@@ -216,13 +231,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Arquero en camello (arquero montado), Escaramuzador zenete (hostigador montado)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Kasbah (los castillos del equipo trabajan 25% más rápido)
@@ -233,10 +248,10 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
               Todos pueden entrenar escaramuzadores zenetes en la galería de tiro con arco a partir de la Edad de los
-              Castillos.
+              Castillos
             </li>
           </ul>
           </p>
@@ -273,13 +288,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Arambai (caballería con ataque a distancia)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Howdah (Elefantes de batalla +1/+1 puntos de armadura)
@@ -290,9 +305,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Reliquias visibles en el mapa desde el inicio.
+              Reliquias visibles en el mapa desde el inicio
             </li>
           </ul>
           </p>
@@ -333,13 +348,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Catafracta (caballería)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Fuego griego (barcos incendiarios: +1 de alcance)
@@ -350,9 +365,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Monjes: curan a las unidades heridas +100% más rápido.
+              Monjes: curan a las unidades heridas +100% más rápido
             </li>
           </ul>
           </p>
@@ -393,13 +408,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Vagón husita (arma de asedio), Obús (cañón de asedio)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Tácticas de Wagenburg (las unidades de pólvora se mueven 15% más rápido)
@@ -411,9 +426,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Los mercados trabajan 80% más rápido.
+              Los mercados trabajan 80% más rápido
             </li>
           </ul>
           </p>
@@ -451,13 +466,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Coustillier (caballería), Milicia flamenca (infantería)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Viñedos de Borgoña (los granjeros generan oro lentamente, además de comida)
@@ -469,9 +484,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Las reliquias generan comida, además de oro.
+              Las reliquias generan comida, además de oro
             </li>
           </ul>
           </p>
@@ -506,13 +521,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Arquero con arco largo (arquero)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Hidalgo (arqueros a pie: +1 de alcance
@@ -524,7 +539,7 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
               Las galerías de tiro con arco trabajan 20% más rápido
             </li>
@@ -565,13 +580,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Konnik (caballería)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Estribos (la caballería ataca 33% más rápido)
@@ -582,9 +597,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Las herrerías trabajan 80% más rápido.
+              Las herrerías trabajan 80% más rápido
             </li>
           </ul>
           </p>
@@ -622,13 +637,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Invasor de pasto(infantería)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Bastión (castillos y torres disparan 25% más rápido)
@@ -639,9 +654,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Taller de asedio: 20% más rápido.
+              Taller de asedio: 20% más rápido
             </li>
           </ul>
           </p>
@@ -680,13 +695,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Chu Ko Nu (arquero)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Gran Muralla (murallas y torres: +30% de vida)
@@ -697,9 +712,9 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Las granjas brindan +10% de comida.
+              Las granjas brindan +10% de comida
             </li>
           </ul>
           </p>
@@ -740,13 +755,13 @@
             </li>
             <br>
             <li>
-              Unidad única:
+              <b>Unidad única:</b>
               <br>
               Carro de guerra (arquero montado), Barco Tortuga (navío de guerra)
             </li>
             <br>
             <li>
-              Tecnologías únicas:
+              <b>Tecnologías únicas:</b>
               <ul>
                 <li>
                   Eupseong (torres de guardia, de vigilancia y del homenaje: +2 de alcance)
@@ -757,9 +772,1691 @@
                 </li>
               </ul>
             <li>
-              Bonificación para el equipo:
+              <b>Bonificación para el equipo:</b>
               <br>
-              Línea de manganas: se reduce su distancia mínima de ataque.
+              Línea de manganas: se reduce su distancia mínima de ataque
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/cumanos.png" alt="Cumanos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/cumans_unit.png" alt="Cumanos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            CUMANOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de caballería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Pueden construir centros urbanos adicionales desde la Edad Feudal
+            </li>
+            <li>
+              Taller de asedio y ariete disponibles en la Edad Feudal; mejora a ariete cubierto disponible en la Edad de los Castillos
+            </li>
+            <li>
+              Galerías de tiro con arco y establos cuestan -75 de madera
+            </li>
+            <li>
+              Caballería 5% más rápida en cada edad (a partir de la Feudal)
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Kipchak (arquero a caballo)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Ganadería de la estepa (caballería ligera, lanceros esteparios y arqueros a caballo se entrenan 100% más rápido)
+                </li>
+                <br>
+                <li>
+                  Mercenarios cumanos (los integrantes del equipo pueden entrenar 5 kipchaks de élite gratis por castillo)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Empalizadas: +33% de puntos de vida
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/dravidians.png" alt="Dravídicos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/dravidians_unit.png" alt="Dravídicos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            DRAVÍDICOS
+          </h3>
+          <h4 class="dsha">
+            Civilización naval y de infantería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Recibe +200 de madera al avanzar a la siguiente Edad
+            </li>
+            <li>
+              Los pescadores y barcos pesqueros cargan +15
+            </li>
+            <li>
+              Las tecnologías del cuartel cuestan -50%
+            </li>
+            <li>
+              Los hostigadores y elefantes arqueros atacan 25% más rápido
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Guerrero urumi (infantería), Thirisadai (buque de guerra)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Cuerpo médico (Los elefantes regeneran 20 puntos de vida por minuto)
+                </li>
+                <br>
+                <li>
+                  Acero Wootz (Los ataques de la infantería y caballería ignoran la armadura)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Los muelles brindan +5 de espacio de población
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Eslavos.png" alt="Eslavos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/eslavos_unit.png" alt="Eslavos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            ESLAVOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de infantería y asedio
+          </h4>
+          <ul class="dsha">
+            <li>
+              Granjeros trabajan 10% más rápido
+            </li>
+            <li>
+              Suministros gratis
+            </li>
+            <li>
+              Las unidades del taller de asedio son 15% más baratas
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Boyardo (caballería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Detinets (Reemplaza 40% del costo de piedra de castillos y torres con madera)
+                </li>
+                <br>
+                <li>
+                  Druzhina (Infantería daña a unidades adyacentes)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Los edificios militares brindan +5 de espacio de población
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Espanoles.png" alt="Españoles Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/espanoles_unit.png" alt="Españoles Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            ESPAÑOLES
+          </h3>
+          <h4 class="dsha">
+            Civilización de pólvora y monjes
+          </h4>
+          <ul class="dsha">
+            <li>
+              Constructores: trabajan 30% más rápido
+            </li>
+            <li>
+              Las mejoras de la Herrería no cuestan oro
+            </li>
+            <li>
+              Los galeones artillados aprovechan la mejora de Balística (disparan más rápido y con mayor precisión)
+            </li>
+            <li>
+              Las unidades de pólvora disparan 18% más rápido
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Conquistador (artillero montado), Misionero (monje montado)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Inquisición (los monjes convierten más rápido)
+                </li>
+                <br>
+                <li>
+                  Supremacía (los aldeanos son más fuertes para pelear)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Las unidades mercantes generan +25% de oro
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/etiopes.png" alt="Etiopes Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/etiopes_unit.png" alt="Etiopes Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            ETIOPES
+          </h3>
+          <h4 class="dsha">
+            Civilización de arqueros
+          </h4>
+          <ul class="dsha">
+            <li>
+              Los arqueros disparan 18% más rápido
+            </li>
+            <li>
+              Reciben +100 de oro y +100 de comida al avanzar a la siguiente edad
+            </li>
+            <li>
+              Mejora de piquero gratis
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Shotelai (infantería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Herederos reales (los shotelai se crean casi al instante)
+                </li>
+                <br>
+                <li>
+                  Mecanismos de torsión (mayor área de efecto para las unidades del taller de asedio)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Torres y puestos de avanzada: +3 de campo de visión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/francos.png" alt="Francos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/franks_unit.png" alt="Francos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            FRANCOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de caballería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Los castillos cuestan -25%
+            </li>
+            <li>
+              Caballería: +20% puntos de vida a partir de Feudal
+            </li>
+            <li>
+              Actualizaciones del molino gratis
+            </li>
+            <li>
+              Recolectores trabajan 15% más rápido
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Lanzador de hachas (infantería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Hacha de arista (lanzadores de hachas: +1 de alcance)
+                </li>
+                <br>
+                <li>
+                  Código caballeresco (establos funcionan 40% más rápido)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Caballeros +2 de campo de visión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/gurjaras.png" alt="Gurjaras Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/gurjaras_unit.png" alt="Gurjaras Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            GURJARAS
+          </h3>
+          <h4 class="dsha">
+            Civilización de camellos y caballería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Comienza con 2 arbustos de bayas
+            </li>
+            <li>
+              Puedes guarecer ganado en el molino para producir comida
+            </li>
+            <li>
+              Las unidades montadas causan +40% de daño
+            </li>
+            <li>
+              Puedes guarecer barcos pesqueros en el muelle
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Lanzador de chakram (infantería), Jinete de shrivamsha (caballería), Explorador a camello (jinete a camello)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Chatrias (Las unidades militares cuestan -25% de comida)
+                </li>
+                <br>
+                <li>
+                  Guardia fronteriza (Las unidades a camello y elefantes arqueros: +4 de armadura cuerpo a cuerpo)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Las unidades a camello y elefante se generan un 25% más rápido
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/godos.png" alt="Godos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/godos_unit.png" alt="Godos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            GODOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de infantería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Infantería cuesta -20% en Alta Edad Media, -25% en Feudal, -30% en Castillos y -35% en Imperial
+            </li>
+            <li>
+              Infantería: +1 de ataque vs. edificios por edad (a partir de Feudal)
+            </li>
+            <li>
+              Aldeanos: +5 de ataque vs. jabalí; los cazadores cargan +15 de carne
+            </li>
+            <li>
+              El telar se desarrolla al instante
+            </li>
+              +10 de población en la Edad Imperial
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Huscarle (infantería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Anarquía (puedes entrenar huscarles en los Cuarteles)
+                </li>
+                <br>
+                <li>
+                  Perfusión (los Cuarteles trabajan 100% más rápido)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Los Cuarteles trabajan 20% más rápido
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Huns.png" alt="Hunos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/hunos_unit.png" alt="Hunos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            HUNOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de caballería
+          </h4>
+          <ul class="dsha">
+            <li>
+              No necesitan casas, pero comienzan con -100 de madera
+            </li>
+            <li>
+              Arqueros a caballo: cuestan -10% en Castillos, -20% en Imperial
+            </li>
+            <li>
+              Trebuchets: +30% de precisión
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Tarcano (caballería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Merodeadores (crear tarcanos en establos)
+                </li>
+                <br>
+                <li>
+                  Ateísmo (+100 años a victorias enemigas por maravilla y reliquias; las reliquias enemigas generan -50% recursos)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Los establos funcionan 20% más rápido
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Incas.png" alt="Incas Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/incas_unit.png" alt="Incas Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            INCAS
+          </h3>
+          <h4 class="dsha">
+            Civilización de infantería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Comienza con una de llama gratis
+            </li>
+            <li>
+              Las mejoras de herrería afectan a los aldeanos a partir de la Edad de los Castillos
+            </li>
+            <li>
+              Las casas soportan 10 de población
+            </li>
+            <li>
+              Los edificios cuestan -15% piedra
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Tarcano (caballería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Merodeadores (crear tarcanos en establos)
+                </li>
+                <br>
+                <li>
+                  Ateísmo (+100 años a victorias enemigas por maravilla y reliquias; las reliquias enemigas generan -50% recursos)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Los establos funcionan 20% más rápido
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Indostanies.png" alt="Indostanies Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/indostanies_unit.png" alt="Indostanies Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            INDOSTANÍES
+          </h3>
+          <h4 class="dsha">
+            Civilización de camellos y pólvora
+          </h4>
+          <ul class="dsha">
+            <li>
+              Los aldeanos cuestan -10% en Alta Edad Media, -15% en Feudal, -20% en Castillos, -25% en Imperial
+            </li>
+            <li>
+              Unidades a camello: atacan 25% más rápido
+            </li>
+            <li>
+              Unidades de pólvora: +1 armadura normal/+1 contra perforación
+            </li>
+            <li>
+              Puede construir caravasares en Imperial
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Ghulam (infantería), Jinete de camello imperial (unidad a camello)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Gran vialidad principal (ingresos de oro 10% más rápidos)
+                </li>
+                <br>
+                <li>
+                  Shatagni (artilleros manuales: +2 de alcance)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Unidades a camello y caballería ligera: +2 de ataque contra edificios
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Italians.png" alt="Italianos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/italians_unit.png" alt="Italianos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            ITALIANOS
+          </h3>
+          <h4 class="dsha">
+            Civilización arquera y naval
+          </h4>
+          <ul class="dsha">
+            <li>
+              Avanzar a la siguiente Edad cuesta -15%
+            </li>
+            <li>
+              Las tecnologías de los muelles y la universidad cuestan -33%
+            </li>
+            <li>
+              Los barcos pesqueros cuestan -15%
+            </li>
+            <li>
+              Las unidades de pólvora cuestan -20%
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Ballestero genovés (arquero), Condotiero (infantería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Escudo pavés (arqueros a pie y condotieros: +1 de armadura normal y +1 contra perforación)
+                </li>
+                <br>
+                <li>
+                  Ruta de la Seda (unidades mercantes: cuestan -50%)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Condotiero disponible en los cuarteles en la Edad Imperial
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Japanese.png" alt="Japoneses Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/japanese_unit.png" alt="Japoneses Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            JAPONESES
+          </h3>
+          <h4 class="dsha">
+            Civilización de infantería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Pesqueros: 2x puntos de vida, +2 arm. contra perforación; trabajan +5% en Alta Edad Media, +10% en Feudal, +15% en Castillos y +20% en Imperial
+            </li>
+            <li>
+              Molinos, campamento minero/maderero cuestan -50%
+            </li>
+            <li>
+              Infantería ataca 33% más rápido a partir de la Edad Feudal
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Samurái (infantería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Yasama (torres disparan flechas adicionales)
+                </li>
+                <br>
+                <li>
+                  Kataparuto (trebuchets disparan y se empacan más rápido)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Galeras obtienen +50% de campo de visión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/jemeres.png" alt="Jemeres Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/jemer_unit.png" alt="Jemeres Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            JEMERES
+          </h3>
+          <h4 class="dsha">
+            Civilización de elefantes y asedio
+          </h4>
+          <ul class="dsha">
+            <li>
+              No necesitas construir edificios para avanzar a la siguiente edad o desbloquear otros edificios
+            </li>
+            <li>
+              Los granjeros no necesitan depositar la comida en molinos o centros urbanos
+            </li>
+            <li>
+              Los elefantes de combate se mueven 10% más rápido
+            </li>
+            <li>
+              Los aldeanos pueden refugiarse en las casas
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Elefante con balista (ecorpión montado)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Colmillos de acero (elefantes de combate: +3 de ataque)
+                </li>
+                <br>
+                <li>
+                  Ballesta doble (los elefantes con balista y los escorpiones disparan dos proyectiles)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Escorpiones: +1 de alcance
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Lithuanians.png" alt="Lituanos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/liutanos_unit.png" alt="Lituanos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            LITUANOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de caballería y monjes
+          </h4>
+          <ul class="dsha">
+            <li>
+              Inicia con +150 de comida
+            </li>
+            <li>
+              Línea de lanceros y hostigadores se mueven 10% más rápido
+            </li>
+            <li>
+              Cada reliquia resguardada otorga +1 de ataque a caballeros y leitis (máximo +4)
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Leitis (caballería), Húsar alado (caballería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Fuertes en las colinas (centros urbanos: +3 de alcance)
+                </li>
+                <br>
+                <li>
+                  Escudos rectangulares (línea de lanceros y hostigadores: +2 de armadura contra perforación)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Los monasterios trabajan 20% más rápido
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Magyars.png" alt="Magiares Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/magiar_unit.png" alt="Magiares Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            MAGIARES
+          </h3>
+          <h4 class="dsha">
+            Civilización de caballería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Los aldeanos matan lobos de un golpe
+            </li>
+            <li>
+              Gratis: Forja, Fundición de hierro, Alto horno
+            </li>
+            <li>
+              Caballería de exploración, Caballería ligera, Húsares cuestan -15%
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Húsar magiar (caballería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Ejército de Corvino (los húsares magiares no cuestan oro)
+                </li>
+                <br>
+                <li>
+                  Arco recurvo (arqueros montados: +1 de alcance, +1 de ataque)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Arqueros a pie tienen +2 de campo de visión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Malay.png" alt="Malayos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/malayos_unit.png" alt="Malayos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            MALAYOS
+          </h3>
+          <h4 class="dsha">
+            Civilización naval
+          </h4>
+          <ul class="dsha">
+            <li>
+              Avanza a la siguiente edad 66% más rápido
+            </li>
+            <li>
+              Las trampas para peces cuestan -33% y brindan 3X de comida
+            </li>
+            <li>
+              Los elefantes de combate cuestan -30% en Castillos, -40% en Imperial
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Guerrero Karambit (infantería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Talasocracia (convierte a los muelles en puertos que disparan flechas)
+                </li>
+                <br>
+                <li>
+                  Leva en masa (el costo de la línea de milicia se sustituye con costo adicional en comida)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Muelles: +100% de campo de visión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Malians.png" alt="Malíes Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/malies_unit.png" alt="Malíes Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            MALÍES
+          </h3>
+          <h4 class="dsha">
+            Civilización de infantería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Los edificios cuestan -15% de madera
+            </li>
+            <li>
+              Las unidades del cuartel: +1P de armadura por edad a partir de la Feudal
+            </li>
+            <li>
+              Las minas de oro duran 30% más
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Guerreras Gbeto (infantería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Tigui (los centros urbanos disparan incluso si no hay unidades resguardadas en su interior)
+                </li>
+                <br>
+                <li>
+                  Farimba (caballería: +5 de ataque)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Las universidades trabajan 80% más rápido
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Mayans.png" alt="Mayas Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/mayas_unit.png" alt="Mayas Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            MAYAS
+          </h3>
+          <h4 class="dsha">
+            Civilización de arqueros
+          </h4>
+          <ul class="dsha">
+            <li>
+              Comienzan con +1 aldeano, pero -50 comida
+            </li>
+            <li>
+              Los recursos duran 15% más
+            </li>
+            <li>
+              Arqueros: cuestan -10% en Feudal, -20% en Castillos, -30% en Imperial
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Arquero emplumado (arquero)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Lanzadores de jabalina Hul'che (los hostigadores arrojan un segundo proyectil)
+                </li>
+                <br>
+                <li>
+                  El Dorado (Guerreros Águila: +40 puntos de vida)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Las murallas cuestan -50%
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Mongols.png" alt="Mongoles Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/mongol_unit.png" alt="Mongoles Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            MONGOLES
+          </h3>
+          <h4 class="dsha">
+            Civilización de arqueros a caballo
+          </h4>
+          <ul class="dsha">
+            <li>
+              Los arqueros a caballo disparan 25% más rápido
+            </li>
+            <li>
+              Caballería ligera, húsares y lanceros de la estepa: +30% puntos de vida
+            </li>
+            <li>
+              Los cazadores trabajan 40% más rápido
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Mangudai (arquero a caballo)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Nómadas (no pierden su capacidad de población aunque les destruyan casas)
+                </li>
+                <br>
+                <li>
+                  Instrucción militar (las unidades del taller de asedio se mueven 50% más rápido)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Caballería de exploración, ligera y húsares: +2 de campo de visión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Persians.png" alt="Persas Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/persian_unit.png" alt="Persas Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            PERSAS
+          </h3>
+          <h4 class="dsha">
+            Civilización de caballería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Comienzan con +50 de madera y comida
+            </li>
+            <li>
+              Centro urbano y muelle: 2x puntos de vida; trabajan +10% más rápido en Feudal, +15% en Castillos, +20% en Imperial
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Elefante de guerra (caballería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Kamandaran (el costo en oro de la línea de arqueros es reemplazado por costo adicional en madera)
+                </li>
+                <br>
+                <li>
+                  Caballeros +2 de ataque contra arqueros
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Caballería de exploración, ligera y húsares: +2 de campo de visión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Poles.png" alt="Polacos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/poles_unit.png" alt="Polacos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            POLACOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de caballería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Los aldeanos regeneran 5 puntos de vida por minuto en la Alta Edad Media, 10 en Feudal, 15 en Castillos y 20 en Imperial
+            </li>
+            <li>
+              Construyen folwarks en vez de molinos
+            </li>
+            <li>
+              Los mineros de piedra generan oro además de piedra
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Obuch (infantería), Húsar alado (caballería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Privilegios Szlachta (caballeros: cuestan -60% de oro)
+                </li>
+                <br>
+                <li>
+                  Legado lequítico (la caballería ligera inflige daño por pisoteo)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Caballería de exploración, caballería ligera y húsares: +1 de ataque vs. arqueros
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Portuguese.png" alt="Portugueses Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/portuguese_unit.png" alt="Portugueses Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            PORTUGUESES
+          </h3>
+          <h4 class="dsha">
+            Civilización naval y de pólvora
+          </h4>
+          <ul class="dsha">
+            <li>
+              Todas las unidades cuestan -20% de oro
+            </li>
+            <li>
+              Las tecnologías se desarrollan 30% más rápido
+            </li>
+            <li>
+              Barcos: +10% de puntos de vida
+            </li>
+            <li>
+              Pueden construir Factorías en la Edad Imperial
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Cañón de salvas (arma de asedio), Carabela (navío de guerra)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Carracas (+1/+1 de armadura para barcos)
+                </li>
+                <br>
+                <li>
+                  Arcabuz (unidades de pólvora más precisas)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Campo de visión compartido con el equipo a partir de la Alta Edad Media
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Saracens.png" alt="Sarracenos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/sarracenos_unit.png" alt="Sarracenos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            SARRACENOS
+          </h3>
+          <h4 class="dsha">
+            Civilización naval y de camellos
+          </h4>
+          <ul class="dsha">
+            <li>
+              Comercio en mercado cuesta solo 5%
+            </li>
+            <li>
+              Mercado: cuesta -100 de madera
+            </li>
+            <li>
+              Barcos de transporte: 2x de puntos de vida, 2x capacidad de carga
+            </li>
+            <li>
+              Galeras: atacan 25% más rápido
+            </li>
+            <li>
+              Camellos: +10 de puntos de vida
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Mameluco (jinete de camello)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Fanatismo (unidades en camello: +20 puntos de vida)
+                </li>
+                <br>
+                <li>
+                  Contrapesos (Línea de trebuchets y manganas: +15% de ataque)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Arqueros a pie: +2 de ataque contra edificios
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/sicilians.png" alt="Sicilianos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/sicilianos_unit.png" alt="Sicilianos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            SICILIANOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de infantería y caballería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Comienzan con +100 de piedra
+            </li>
+            <li>
+              Los castillos y centros urbanos se construyen un 100% más rápido
+            </li>
+            <li>
+              Las unidades militares terrestres (excepto armas de asedio) reciben un 33% menos de daño adicional
+            </li>
+            <li>
+              Las mejoras de las granjas brindan +100% de comida
+            </li>
+            <li>
+              Los donjons reemplazan a la línea de torres de guardia
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Mameluco (jinete de camello)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Fanatismo (unidades en camello: +20 puntos de vida)
+                </li>
+                <br>
+                <li>
+                  Contrapesos (Línea de trebuchets y manganas: +15% de ataque)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Arqueros a pie: +2 de ataque contra edificios
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Tatars.png" alt="Tártaros Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/tartaros_unit.png" alt="Tártaros Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            TÁRTAROS
+          </h3>
+          <h4 class="dsha">
+            Civilización de arqueros a caballo
+          </h4>
+          <ul class="dsha">
+            <li>
+              Aldeanos: recolectan +50% de comida del ganado
+            </li>
+            <li>
+              Los nuevos centros urbanos generan 2 ovejas a partir de la Edad de los Castillos
+            </li>
+            <li>
+              Las unidades infligen +25% de daño cuando pelean desde una posición elevada
+            </li>
+            <li>
+              Dactilera y Tácticas de los partos son gratis
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Keshik (caballería de saqueo), Camello llameante (petardo)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Armadura de seda (caballería ligera, lanceros esteparios y arqueros a caballo: +1 de armadura y +1 contra perforación)
+                </li>
+                <br>
+                <li>
+                  Tácticas de asedio timúridas (trebuchets: +2 de alcance, permite crear camellos llameantes)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Arqueros a caballo: +2 de campo de visión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Teutons.png" alt="Teutones Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/teutones_unit.png" alt="Teutones Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            TEUTONES
+          </h3>
+          <h4 class="dsha">
+            Civilización de infantería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Monjes: alcance de curación 2x
+            </li>
+            <li>
+              Las torres pueden alojar a 2x unidades
+            </li>
+            <li>
+              Matacanes y Hierbas medicinales gratis
+            </li>
+            <li>
+              Las granjas cuestan -40%
+            </li>
+            <li>
+              El centro urbano acuartela a +10
+            </li>
+            <li>
+              Las unidades de cuarteles y establos tienen +1 de armadura en Castillos y en Imperial (+2 en total)
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Caballero teutónico (infantería)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Acorazado (armadura cuerpo a cuerpo adicional para armas de asedio)
+                </li>
+                <br>
+                <li>
+                  Almenas (+3 de alcance para castillos la infantería acuartelada dispara flechas)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Las unidades son más resistentes a la conversión
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Turks.png" alt="Turcos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/turcos_unit.png" alt="Turcos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            TURCOS
+          </h3>
+          <h4 class="dsha">
+            Civilización de pólvora
+          </h4>
+          <ul class="dsha">
+            <li>
+              Unidades de pólvora +25% de puntos de vida; desarrollar tecnologías de pólvora cuesta -50%; Química gratis
+            </li>
+            <li>
+              Mineros de oro trabajan 20% más rápido
+            </li>
+            <li>
+              Caballería de exploración, caballería ligera y húsares: +1 arm. contra perforación
+            </li>
+            <li>
+              Mejoras gratis a caballería ligera y húsares
+            </li>
+            <br>
+            <li>
+              <b>Unidad única:</b>
+              <br>
+              Jenízaros (artillero manual)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Sipahi (arqueros a caballo: +20 puntos de vida)
+                </li>
+                <br>
+                <li>
+                  Artillería (+2 de alcance para torres de bombarda, cañones de asedio y galeones artillados)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Las unidades de pólvora se crean 25% más rápido
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Vietnamese.png" alt="Vietnamitas Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/vietnamese_unit.png" alt="Vietnamitas Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            VIETNAMITAS
+          </h3>
+          <h4 class="dsha">
+            Civilización de arqueros
+          </h4>
+          <ul class="dsha">
+            <li>
+              Revela las posiciones enemigas al inicio de la partida
+            </li>
+            <li>
+              Las mejoras económicas no cuestan madera
+            </li>
+            <li>
+              Unidades de la galería de tiro con arco +20% de puntos de vida
+            </li>
+            <li>
+              Leva gratis
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Arquero de ratán (arquero), Hostigador imperial (hostigador)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Chatras (elefantes de batalla +100 de puntos de vida)
+                </li>
+                <br>
+                <li>
+                  Papel moneda (Los leñadores lentamente producen oro además de madera)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Mejora a Hostigador imperial disponible en la Edad Imperial
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="civi">
+        <div class="card">
+          <div class="front">
+            <img src="../images/logos/Vikings.png" alt="Vikingos Front">
+          </div>
+          <div class="back">
+            <img src="../images/unic_units/vikings_unit.png" alt="Vikingos Back">
+          </div>
+        </div>
+        <div class="texto_civ">
+          <h3 class="dsha">
+            VIKINGOS
+          </h3>
+          <h4 class="dsha">
+            Civilización naval y de infantería
+          </h4>
+          <ul class="dsha">
+            <li>
+              Navíos de guerra: costo -15% en Feudal, -15% en Castillos, -20% en Imperial
+            </li>
+            <li>
+              Infantería: +20% puntos de vida a partir de Feudal
+            </li>
+            <li>
+              Carretilla, carro de mano: gratis
+            </li>
+            <br>
+            <li>
+              <b>Unidades únicas:</b>
+              <br>
+              Berserker (infantería), Drakkar (barco largo de guerra)
+            </li>
+            <br>
+            <li>
+              <b>Tecnologías únicas:</b>
+              <ul>
+                <li>
+                  Caudillos (infantería: bonificación de daño contra caballería)
+                </li>
+                <br>
+                <li>
+                  Trance frenético (los Berserkers se regeneran más rápido)
+                </li>
+              </ul>
+            <li>
+              <b>Bonificación para el equipo:</b>
+              <br>
+              Los muelles cuestan -15%
             </li>
           </ul>
           </p>
@@ -770,30 +2467,35 @@
 
 
   <!-- FOOTER -->
-
   <footer>
     <nav>
       <ul class="contactos_footer">
-        <li class="mail">
-          <a href="mailto:guido.gattas@gmail.com"><i class="fa-regular fa-envelope"></i>
-          </a>
-        </li>
-        <li class="linkedin">
-          <a href="https://ar.linkedin.com/" target="_blank">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li class="instagram">
-          <a href="https://www.instagram.com/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
+        <div data-aos="zoom-in" data-aos-duration="2000">
+          <li class="mail">
+            <a href="mailto:guido.gattas@gmail.com"><i class="fa-regular fa-envelope"></i>
+            </a>
+          </li>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="2000">
+          <li class="linkedin">
+            <a href="https://ar.linkedin.com/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="2000">
+          <li class="instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </div>
       </ul>
     </nav>
     <a class="footer_up" href="#"><i class="fa-regular fa-circle-up"></i></a>
   </footer>
   </div>
-  
+
   <!-- SCRIPTS -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
