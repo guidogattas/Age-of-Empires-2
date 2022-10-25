@@ -742,9 +742,10 @@ main.top_players div p::first-line {
   a.footer_up {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 6px;
     z-index: 99;
     filter: drop-shadow(0.05em 0.05em 0.05em black);
+    margin: 18px 0px;
   }
 
   footer {
