@@ -115,9 +115,15 @@ h1 {
 
 /* HEADER */
 
+
 .navbar-propio {
   position: fixed;
   z-index: 9;
+}
+
+.navbar-propio > div {
+  align-items: center;
+  justify-content: space-between;
 }
 
 header nav {
@@ -742,7 +748,7 @@ main.top_players div p::first-line {
   a.footer_up {
     position: fixed;
     bottom: 30px;
-    right: 6px;
+    right: 4px;
     z-index: 99;
     filter: drop-shadow(0.05em 0.05em 0.05em black);
     margin: 18px 0px;
@@ -766,11 +772,10 @@ main.top_players div p::first-line {
       padding: 8px;
     }
 
-    /* .btns {
-      font-size: 1.4rem;
-      padding: 14px;
-    } */
-
+    .navbar>.container-fluid {
+      justify-content: center;
+    }
+ 
     .section_second_index .banner {
       align-items: center;
       width: 70%;
@@ -928,4 +933,4 @@ main.top_players div p::first-line {
       }
     }
   }
-
+}
