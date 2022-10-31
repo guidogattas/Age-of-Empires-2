@@ -1,0 +1,29 @@
+main {
+    &.uni_container {
+        img {
+            width: 70%;
+            margin-top: 80px;
+            filter: drop-shadow(0.5em 0.2em 0.5em white);
+            transition: all 0.4s linear;
+
+            &:hover {
+                width: 70%;
+                margin-top: 80px;
+                filter: drop-shadow(0.5em 0.2em 0.5em white);
+                transform: scale(1.1);
+            }
+        }
+
+        h3 {
+            margin-top: 30px;
+        }
+
+        &.col-uni {
+            background: linear-gradient(to bottom right, rgb(45, 53, 53), rgb(0, 0, 0));
+            border-radius: 20px;
+            filter: drop-shadow(0.1em 0.2em 0.1em black);
+            margin: 120px 10px;
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+div {
+    &.icono {
+      height: 150px;
+      width: 150;
+      &:hover {
+        color: $primary-hover;
+      }
+    }
+  
+    &.btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      padding: 20px;
+      justify-content: space-between;
+      gap: 1em;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        a:hover {
+          color: $primary-hover;
+        }
+      }
+    }

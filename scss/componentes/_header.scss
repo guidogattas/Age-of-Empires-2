@@ -1,0 +1,32 @@
+header {
+  nav {
+    background-image: url(../images/back-head03.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+
+    h1 {
+      font-family: "Cormorant Infant";
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      transition: 0.5s;
+    }
+
+    filter: drop-shadow(0.1em 0.1em 0.2em black);
+
+    &.navbar-propio {
+      position: fixed;
+      z-index: 9;
+
+      > div {
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+

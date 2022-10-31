@@ -1,0 +1,23 @@
+.card {
+  .front {
+    transform: perspective(500px) rotateY(0deg);
+  }
+  .back {
+    transform: perspective(500px) rotateY(180deg);
+  }
+  &:hover .front {
+    transform: perspective(500px) rotateY(180deg);
+  }
+  &:hover .back {
+    transform: perspective(500px) rotateY(360deg);
+  }
+}
+
+.btn_search,
+.btn_share {
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.2);
+    color: $primary-hover;
+  }
+}
