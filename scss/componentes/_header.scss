@@ -18,7 +18,7 @@ header {
       }
     }
 
-    filter: drop-shadow(0.1em 0.1em 0.2em black);
+    filter: $ds02b;
 
     &.navbar-propio {
       position: fixed;

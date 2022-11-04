@@ -28,7 +28,7 @@
   align-items: center;
 }
 
-main.top_players > div, main.top_players, .consejos ul, .civilizaciones, .main_index div, .section_first_index, section.trailer, main {
+main.top_players > div, main.top_players, .consejos ul, .civilizaciones, .main_index div, .section_first_index, section.trailer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,7 +41,7 @@ header nav {
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
-  filter: drop-shadow(0.1em 0.1em 0.2em black);
+  filter: drop-shadow(0.2em 0.2em 0.2em #080808);
 }
 header nav h1 {
   font-family: "Cormorant Infant";
@@ -204,7 +204,7 @@ div.texto_imagen {
   font-family: "Cormorant Infant";
   font-weight: bold;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  filter: drop-shadow(0.1em 0.1em 0.1em black);
+  filter: drop-shadow(0.2em 0.2em 0.2em #080808);
 }
 div.texto_imagen h2 {
   font-size: 2.75rem;
@@ -255,7 +255,7 @@ ul {
 }
 
 .dsha {
-  filter: drop-shadow(0.1em 0.2em 0.3em black);
+  filter: drop-shadow(0.2em 0.2em 0.2em #080808);
 }
 
 em {
@@ -272,9 +272,9 @@ section.trailer {
 }
 section.trailer video {
   width: 80vw;
-  filter: drop-shadow(0.5em 0.5em 0.5em black);
+  filter: drop-shadow(0.5em 0.5em 0.5em #080808);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   section.trailer {
     display: none;
   }
@@ -283,14 +283,14 @@ section.trailer video {
 div.imagen_principal {
   display: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   div.imagen_principal {
     display: block;
+    margin-top: 30px;
+    filter: drop-shadow(0.5em 0.5em 0.5em #080808);
   }
   div.imagen_principal img {
     width: 100%;
-    size: cover;
-    right: 200px;
   }
 }
 
@@ -311,7 +311,6 @@ div.imagen_principal {
 .main_index div {
   transition: 0.5s;
   margin: 10px 0px;
-  filter: grayscale(70%);
   transition: 0.5s;
 }
 
@@ -323,7 +322,7 @@ div.imagen_principal {
 }
 .menu_index div:hover {
   filter: grayscale(0%);
-  transform: scale(1.1) rotate(-5deg);
+  transform: scale(1.05) rotate(-1deg);
   cursor: pointer;
 }
 .menu_index img {
@@ -361,7 +360,7 @@ section.section_second_index div.texto_section {
   background-image: url(../images/background04.jpg);
   background-size: cover;
   text-align: center;
-  filter: drop-shadow(0.2em 0.2em 0.2em black);
+  filter: drop-shadow(0.2em 0.2em 0.2em #080808);
 }
 section.section_second_index div.texto_inside {
   background-color: rgba(0, 0, 0, 0.5);
@@ -431,7 +430,7 @@ section.section_second_index div.banner img:hover {
   border-radius: 50%;
   height: 200px;
   width: 200px;
-  filter: drop-shadow(0.2em 0.3em 0.4em black);
+  filter: drop-shadow(0.5em 0.5em 0.5em #080808);
 }
 
 .civilizaciones h3 {
@@ -493,7 +492,7 @@ main.uni_container h3 {
 main.uni_container.col-uni {
   background: linear-gradient(to bottom right, rgb(45, 53, 53), rgb(0, 0, 0));
   border-radius: 20px;
-  filter: drop-shadow(0.1em 0.2em 0.1em black);
+  filter: drop-shadow(0.2em 0.2em 0.2em #080808);
   margin: 120px 10px;
 }
 
@@ -579,7 +578,7 @@ main.top_players div.card {
 main.top_players div img {
   border-radius: 100px;
   max-height: 500px;
-  filter: drop-shadow(0.5em 0.6em 0.5em black);
+  filter: drop-shadow(0.5em 0.5em 0.5em #080808);
 }
 main.top_players div p {
   font-family: "Cormorant Infant";
@@ -635,7 +634,7 @@ main.top_players div p::first-line {
     bottom: 30px;
     right: 4px;
     z-index: 99;
-    filter: drop-shadow(0.05em 0.05em 0.05em black);
+    filter: drop-shadow(0.5em 0.5em 0.5em #080808);
   }
   footer {
     justify-content: center;

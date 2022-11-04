@@ -22,7 +22,7 @@ main {
         &.col-uni {
             background: linear-gradient(to bottom right, rgb(45, 53, 53), rgb(0, 0, 0));
             border-radius: 20px;
-            filter: drop-shadow(0.1em 0.2em 0.1em black);
+            filter: $ds02b;
             margin: 120px 10px;
         }
     }

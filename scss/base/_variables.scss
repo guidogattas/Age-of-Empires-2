@@ -6,6 +6,7 @@ $bg-main: #191919;
 $white: rgba(240, 240, 240, 1);
 $bg-inside-text: rgba(0, 0, 0, 0.5);
 $bg-button: #282d2f;
+$ds: #080808;
 
 
 // FUENTES:
@@ -23,3 +24,17 @@ $findex: 1rem;
 $fciv: 0.8rem;
 $ftp: 1rem;
 $funi: 1rem;
+
+// SOMBRAS:
+
+$ds02b: drop-shadow(0.2em 0.2em 0.2em $ds);
+
+$ds05b: drop-shadow(0.5em 0.5em 0.5em $ds);
+
+$ds10b: drop-shadow(1em 1em 1em $ds);
+
+$ds02p: drop-shadow(0.2em 0.2em 0.2em $primary);
+
+$ds05p: drop-shadow(0.5em 0.5em 0.5em $primary);
+
+$ds10p: drop-shadow(1em 1em 1em $primary);
