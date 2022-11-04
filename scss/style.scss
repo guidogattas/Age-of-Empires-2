@@ -1,15 +1,15 @@
-@import './base/colors';
+@import './base/variables';
 @import './base/animaciones';
-@import './base/font_styles';
+@import './base/extend';
 @import './componentes/header';
 @import './componentes/navbar';
 @import './componentes/footer';
 @import './componentes/buttons';
 @import './componentes/out_of_index';
-@import './layouts/index';
-@import './layouts/civilizaciones';
-@import './layouts/unidades';
-@import './layouts/guias';
-@import './layouts/top_players';
+@import './pages/index';
+@import './pages/civilizaciones';
+@import './pages/unidades';
+@import './pages/guias';
+@import './pages/top_players';
 @import './base/media_querys';
 
