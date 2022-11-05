@@ -21,7 +21,7 @@
   color: #f1c17b;
 }
 
-.card_top div, div.ribete, .card_civi, div.civi {
+.card_top div, div.ribete, div.bonus, .card_civi, div.civi {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -476,14 +476,14 @@ section.section_second_index div.banner img:hover {
 main.uni_container img {
   width: 70%;
   margin-top: 80px;
-  filter: drop-shadow(0.5em 0.2em 0.5em white);
+  filter: drop-shadow(0.5em 0.5em 0.5em #ecac4d);
   transition: all 0.4s linear;
 }
 main.uni_container img:hover {
   width: 70%;
   margin-top: 80px;
   filter: drop-shadow(0.5em 0.2em 0.5em white);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 main.uni_container h3 {
   font-size: 1.6rem;
@@ -496,29 +496,39 @@ main.uni_container.col-uni {
   margin: 120px 10px;
 }
 
+div.bonus {
+  text-align: center;
+  margin: 30px;
+}
+div.bonus h3 {
+  margin: 20px;
+  font-size: 1.6rem;
+}
+
 .guias_container h3 {
   text-align: center;
   margin: 50px;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 .guias_container h3:first-child {
   margin-top: 50px;
 }
 .guias_container p {
   text-align: center;
-  margin: 3.5rem;
+  margin: 30px 10vw;
 }
 
 .consejos h3 {
   justify-content: center;
   text-align: center;
-  margin: 100px;
+  margin-bottom: 50px;
   font-size: 2.6rem;
 }
 .consejos ul {
   font-style: italic;
   font-weight: bold;
+  align-items: flex-start;
 }
 .consejos ul li {
   text-align: center;
@@ -736,6 +746,9 @@ main.top_players div.back {
   }
   .guias_container h3 {
     font-size: 1.6em;
+  }
+  .guias_container p {
+    font-size: 0.96rem;
   }
 }
 /* 480px */

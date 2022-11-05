@@ -3,14 +3,14 @@
     text-align: center;
     margin: 50px;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: $h3guia;
     &:first-child {
       margin-top: 50px;
     }
   }
   p {
     text-align: center;
-    margin: 3.5rem;
+    margin: 30px 10vw;
   }
 }
 
@@ -18,7 +18,7 @@
   h3 {
     justify-content: center;
     text-align: center;
-    margin: 100px;
+    margin-bottom: 50px;
     font-size: $h3guia;
     
   }
@@ -26,6 +26,7 @@
     @extend %disp_flex_row_center;
     font-style: italic;
     font-weight: bold;
+    align-items: flex-start;
     li {
       text-align: center;
       max-width: 40ch;
