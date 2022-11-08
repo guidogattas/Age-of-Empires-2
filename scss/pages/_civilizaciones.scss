@@ -32,7 +32,7 @@
   }
   
   .civilizaciones h4 {
-    font-size: $h3civ/1.6;
+    font-size: $h3civ*0.6;
     margin-bottom: 20px;
   }
   
@@ -41,7 +41,7 @@
     margin: 1.4rem;
     max-width: 30ch;
     text-align: left;
-    font-size: $h3civ/2;
+    font-size: $h3civ*0.5;
   }
   
   .back-logo-civ {

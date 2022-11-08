@@ -314,16 +314,18 @@ div.imagen_principal {
   transition: 0.5s;
 }
 
-.menu_index div {
-  filter: grayscale(70%);
-  align-items: center;
-  justify-items: center;
-  transition: 0.5s;
-}
-.menu_index div:hover {
-  filter: grayscale(0%);
-  transform: scale(1.05) rotate(-1deg);
-  cursor: pointer;
+@media screen and (min-width: 480px) {
+  .menu_index div {
+    filter: grayscale(70%);
+    align-items: center;
+    justify-items: center;
+    transition: 0.5s;
+  }
+  .menu_index div:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05) rotate(-1deg);
+    cursor: pointer;
+  }
 }
 .menu_index img {
   width: 80%;
@@ -382,6 +384,8 @@ section.section_second_index div.capturas img:hover {
 section.section_second_index div.banner {
   grid-area: ban;
   width: 80%;
+  max-width: 260px;
+  min-width: 200px;
 }
 @media screen and (max-width: 1080px) {
   section.section_second_index div.banner {
@@ -439,7 +443,7 @@ section.section_second_index div.banner img:hover {
 }
 
 .civilizaciones h4 {
-  font-size: 1rem;
+  font-size: 0.96rem;
   margin-bottom: 20px;
 }
 
@@ -503,6 +507,15 @@ div.bonus {
 div.bonus h3 {
   margin: 20px;
   font-size: 1.6rem;
+}
+div.bonus p {
+  margin: 30px 10vw;
+}
+@media screen and (max-width: 780px) {
+  div.bonus p {
+    margin: 30px 4vw;
+    font-size: 0.8rem;
+  }
 }
 
 .guias_container h3 {
@@ -615,7 +628,7 @@ main.top_players div p::first-line {
     position: relative;
   }
   .fondo_no_index,
-.fondo_no_index img {
+  .fondo_no_index img {
     margin: 0px;
   }
   section.trailer {
@@ -730,7 +743,7 @@ main.top_players div p::first-line {
     margin-top: 240px;
   }
   main.top_players div.front,
-main.top_players div.back {
+  main.top_players div.back {
     justify-content: flex-end;
   }
   main.top_players div p {
