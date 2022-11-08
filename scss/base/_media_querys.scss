@@ -173,32 +173,28 @@
       font-size: 1.6em;
     }
     p {
-      font-size: $fguia*0.8;
+      font-size: $fguia * 0.8;
     }
   }
 }
 
 /* 480px */
 @media screen and (max-width: 480px) {
-  a.footer_up {
-    font-size: 2.5rem;
-  }
-
   .main_index div {
     margin: 0px;
     gap: 1.2rem;
   }
 
-  body .main_index img {
+  .main_index img {
     width: 60%;
   }
 
-  body .main_index h2 {
-    font-size: 1.2rem;
+  .main_index h2 {
+    font-size: $h2*0.8;
   }
 
   .container_index .section_first_index p {
-    font-size: 0.8rem;
+    font-size: $findex * 0.8;
     padding: 30px;
   }
 
@@ -208,11 +204,23 @@
   }
 
   .container_index .section_second_index p {
-    font-size: 0.8rem;
+    font-size: $findex * 0.8;
     padding: 0px;
   }
+}
 
-  footer ul li a i {
-    font-size: 2.5rem;
+@media screen and (min-width: 720px) {
+  .menu_index {
+    div {
+      filter: grayscale(70%);
+      align-items: center;
+      justify-items: center;
+      transition: 0.5s;
+      &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05) rotate(-1deg);
+        cursor: pointer;
+      }
+    }
   }
 }

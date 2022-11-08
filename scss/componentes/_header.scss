@@ -23,7 +23,7 @@ header {
     &.navbar-propio {
       position: fixed;
       z-index: 9;
-
+      padding: 20px;
       > div {
         align-items: center;
         justify-content: space-between;
@@ -39,6 +39,50 @@ header.out_of_index {
       color: $primary-hover;
     }
   }
+  nav {
+    ul {
+      display: flex;
+      filter: drop-shadow(0.2em 0.2em 0.25em black);
+      li {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          font-family: "Cormorant Infant";
+          font-weight: bold;
+          color: $primary;
+          border-radius: 25px;
+          background: $bg-button;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          border-radius: 20px;
+          transition: 0.5s;
+          top: 0;
+          width: 140px;
+          margin: 6px;
+          font-size: $iconos-header;
+          &:hover {
+            color: $bg-button;
+            background-color: $primary;
+          }
+        }
+      }
+    }
+    button {
+      background-color: $primary;
+    }
+  }
 }
 
-
+.lista-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    li {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

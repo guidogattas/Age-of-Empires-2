@@ -108,12 +108,7 @@ div.imagen_principal {
       align-items: center;
       justify-items: center;
       transition: 0.5s;
-      &:hover {
-        filter: grayscale(0%);
-        transform: scale(1.05) rotate(-1deg);
-        cursor: pointer;
       }
-    }
   }
   img {
     width: 80%;
@@ -170,7 +165,6 @@ section {
       &.capturas {
         grid-area: capt;
         margin: 20px;
-        /* align-self: center; */
         img {
           border: 1px solid black;
           transition: 1s;

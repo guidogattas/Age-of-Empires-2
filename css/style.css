@@ -60,6 +60,7 @@ header nav h1 {
 header nav.navbar-propio {
   position: fixed;
   z-index: 9;
+  padding: 20px;
 }
 header nav.navbar-propio > div {
   align-items: center;
@@ -70,7 +71,6 @@ header.out_of_index h1:hover {
   z-index: 9;
   color: #f1c17b;
 }
-
 header.out_of_index nav ul {
   display: flex;
   filter: drop-shadow(0.2em 0.2em 0.25em black);
@@ -99,10 +99,6 @@ header.out_of_index nav ul li a:hover {
 }
 header.out_of_index nav button {
   background-color: #ecac4d;
-}
-
-.navbar-propio {
-  padding: 20px;
 }
 
 .lista-nav {
@@ -321,11 +317,6 @@ div.imagen_principal {
     justify-items: center;
     transition: 0.5s;
   }
-  .menu_index div:hover {
-    filter: grayscale(0%);
-    transform: scale(1.05) rotate(-1deg);
-    cursor: pointer;
-  }
 }
 .menu_index img {
   width: 80%;
@@ -372,7 +363,6 @@ section.section_second_index div.texto_inside {
 section.section_second_index div.capturas {
   grid-area: capt;
   margin: 20px;
-  /* align-self: center; */
 }
 section.section_second_index div.capturas img {
   border: 1px solid black;
@@ -766,18 +756,15 @@ main.top_players div p::first-line {
 }
 /* 480px */
 @media screen and (max-width: 480px) {
-  a.footer_up {
-    font-size: 2.5rem;
-  }
   .main_index div {
     margin: 0px;
     gap: 1.2rem;
   }
-  body .main_index img {
+  .main_index img {
     width: 60%;
   }
-  body .main_index h2 {
-    font-size: 1.2rem;
+  .main_index h2 {
+    font-size: 1.76ch;
   }
   .container_index .section_first_index p {
     font-size: 0.8rem;
@@ -791,8 +778,18 @@ main.top_players div p::first-line {
     font-size: 0.8rem;
     padding: 0px;
   }
-  footer ul li a i {
-    font-size: 2.5rem;
+}
+@media screen and (min-width: 720px) {
+  .menu_index div {
+    filter: grayscale(70%);
+    align-items: center;
+    justify-items: center;
+    transition: 0.5s;
+  }
+  .menu_index div:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05) rotate(-1deg);
+    cursor: pointer;
   }
 }
 

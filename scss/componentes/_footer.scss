@@ -17,7 +17,7 @@ footer {
       align-items: center;
       justify-content: space-between;
       padding: 14px;
-      font-size: 40px;
+      font-size: $iconos-footer;
       a {
         transition: 0.5s;
         &:hover {
@@ -31,7 +31,7 @@ footer {
     }
   }
   a.footer_up {
-    font-size: 40px;
+    font-size: $iconos-footer;
     transition: 0.5s;
     padding: 14px;
     margin: 18px 16px;
