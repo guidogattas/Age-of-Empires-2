@@ -82,6 +82,7 @@ header.out_of_index nav ul li a {
   padding: 10px;
   font-family: "Cormorant Infant";
   font-weight: bold;
+  font-size: 12px;
   color: #ecac4d;
   border-radius: 25px;
   background: #282d2f;
@@ -91,7 +92,6 @@ header.out_of_index nav ul li a {
   top: 0;
   width: 140px;
   margin: 6px;
-  font-size: 0.8rem;
 }
 header.out_of_index nav ul li a:hover {
   color: #282d2f;
@@ -165,7 +165,7 @@ div.btns {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 20px;
   padding: 20px;
   justify-content: space-between;
   gap: 1em;

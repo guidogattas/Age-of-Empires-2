@@ -51,6 +51,7 @@ header.out_of_index {
           padding: 10px;
           font-family: "Cormorant Infant";
           font-weight: bold;
+          font-size: $fbotones;
           color: $primary;
           border-radius: 25px;
           background: $bg-button;
@@ -60,7 +61,6 @@ header.out_of_index {
           top: 0;
           width: 140px;
           margin: 6px;
-          font-size: $iconos-header;
           &:hover {
             color: $bg-button;
             background-color: $primary;
