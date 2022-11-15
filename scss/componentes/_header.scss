@@ -40,9 +40,6 @@ header.out_of_index {
       display: flex;
       filter: drop-shadow(0.2em 0.2em 0.25em black);
       li {
-        &:last-child{
-          // margin-right: 16px;
-        }
         a {
           display: flex;
           justify-content: center;
