@@ -46,49 +46,10 @@ em {
   display: none;
 }
 
-/* INDEX PRIMER BACK IMG VID */
-
-section.trailer {
-  @extend %disp_flex_row_center;
-  margin-top: 14vh;
-  video {
-    width: 80vw;
-    filter: $ds05b;
-  }
-  @media screen and (max-width: 780px) {
-    display: none;
-  }
-}
-
-div.imagen_principal {
-  display: none;
-  @media screen and (max-width: 780px) {
-    display: block;
-    margin-top: 30px;
-    filter: $ds05b;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-/* INDEX SECTION ONE */
-
-.section_first_index {
-  @extend %disp_flex_row_center;
-  p {
-    color: $primary;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    margin: 40px;
-  }
-}
-
 // INDEX - MAIN INDEX - CARTAS //
 
 .main_index {
+  margin-top: 30px;
   img {
     transition: 0.5s;
     border-radius: 50px;
@@ -126,6 +87,48 @@ div.imagen_principal {
   }
 }
 
+/* INDEX PRIMER BACK IMG VID */
+
+section.trailer {
+  @extend %disp_flex_row_center;
+  video {
+    margin-top: 14vh;
+    width: 80vw;
+    filter: $ds05b;
+    border-radius: 10%;
+  }
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+}
+
+div.imagen_principal {
+  display: none;
+  @media screen and (max-width: 780px) {
+    display: block;
+    margin-top: 30px;
+    filter: $ds05b;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* INDEX SECTION ONE */
+
+.section_first_index {
+  @extend %disp_flex_row_center;
+  p {
+    color: $primary;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    margin: 100px;
+  }
+}
+
+
 /* INDEX SECTION TWO */
 
 section {
@@ -136,9 +139,12 @@ section {
     grid-template-areas:
       "txt txt ban"
       "capt capt ban";
-    margin: 60px 10px;
+    margin: 60px 10px 0px 100px;
     justify-content: center;
     gap: 0 4rem;
+    @media screen and (max-width: 1080px) {
+      margin: 60px 10px;
+    }
 
     p {
       font-weight: bold;
@@ -154,6 +160,7 @@ section {
         background-size: cover;
         text-align: center;
         filter: $ds02b;
+        margin:0px 20px;
       }
 
       &.texto_inside {
