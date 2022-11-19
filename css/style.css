@@ -37,11 +37,17 @@ main.top_players > div, main.top_players, .consejos ul, .civilizaciones, .sectio
 }
 
 header nav {
+  min-height: 160px;
   background-image: url(../images/back-head03.jpg);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   filter: drop-shadow(0.2em 0.2em 0.2em #080808);
+}
+@media screen and (max-width: 480px) {
+  header nav {
+    min-height: 0px;
+  }
 }
 header nav h1 {
   font-family: "Cormorant Infant", Helvetica, sans-serif;

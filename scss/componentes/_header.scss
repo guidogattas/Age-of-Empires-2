@@ -1,10 +1,13 @@
 header {
   nav {
+    min-height: 160px;
     background-image: url(../images/back-head03.jpg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
-    // margin-bottom: 25px;
+    @media screen and (max-width: 480px) {
+      min-height: 0px;
+    }
 
     h1 {
       font-family: $font-secundary;
