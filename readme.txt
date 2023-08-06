@@ -5,6 +5,7 @@ https://guidogattas.github.io/Age-of-Empires-2/
 ## Descripción
 
 ¡Bienvenido a la fan page de Age of Empires 2! Este repositorio es un lugar dedicado a todos los amantes del juego clásico de estrategia en tiempo real Age of Empires 2.
+El proyecto fué realizado con VSC, implementando HTML, CSS (SASS).
 
 ## Contenido
 
