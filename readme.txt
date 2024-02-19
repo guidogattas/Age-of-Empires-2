@@ -15,6 +15,10 @@ El proyecto fué realizado con VSC, implementando HTML, CSS (SASS).
 - [Top Players]
 - [Unidades]
 
+## Diseño en Figma:
+
+https://www.figma.com/file/Kyor4wkqbJ9Wf8vJMX1uzh/Age-of-Empires-2---Menu-Expansible?type=design&node-id=0-1&mode=design&t=2Hp57f1SPOecGCCM-0
+
 ## Acerca de Age of Empires 2
 
 Age of Empires 2 es un juego de estrategia en tiempo real (RTS) desarrollado por Ensemble Studios y publicado por Microsoft. Fue lanzado originalmente en 1999 y rápidamente se convirtió en un clásico de la historia de los videojuegos. El juego te permite controlar una civilización y guiarla desde la Edad Media hasta la Edad Imperial, construyendo estructuras, entrenando unidades, y participando en emocionantes batallas.
